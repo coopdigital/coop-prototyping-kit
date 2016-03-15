@@ -6,7 +6,7 @@ The Co-op Prototyping Kit helps quickly create prototypes and showcase them on H
 
 ## Creating a new prototype
 
-The easiest way to start a new prototype is to first [download the Prototyping Kit](#) as a zip and extract the contents to your machine.
+The easiest way to start a new prototype is to first [download the Prototyping Kit](https://github.com/coopdigital/coop-prototyping-kit/archive/0.1.0.zip) as a zip and extract the contents to your machine.
 
 If you want to be able to publish this prototype to Heroku, a few more steps are necessary:
 
