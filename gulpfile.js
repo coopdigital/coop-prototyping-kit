@@ -153,4 +153,4 @@ gulp.task('test', ['testjs']);
 gulp.task('build', ['html', 'css', 'js', 'assets']);
 gulp.task('server', ['build', 'watch', 'connect']);
 
-gulp.task('default', ['build']);
+gulp.task('default', ['server']);
