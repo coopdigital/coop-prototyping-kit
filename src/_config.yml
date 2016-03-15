@@ -7,7 +7,7 @@ baseurl: ""
 url: "http://coop-prototyping-kit.heroku.com"
 
 # Site attributes
-show_logo: true
+show_logo: false
 
 # Build settings
 source: ./
