@@ -1,0 +1,16 @@
+# Jekyll config
+
+# Site settings
+title: Co-op Prototyping Kit
+description: Co-op Prototyping Kit
+baseurl: ""
+url: "http://coop-prototyping-kit.heroku.com"
+
+# Site attributes
+show_logo: true
+
+# Build settings
+source: ./
+destination: ../build
+keep_files: ['css', 'js', 'assets']
+markdown: kramdown

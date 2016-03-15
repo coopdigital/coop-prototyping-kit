@@ -1,0 +1,14 @@
+.DS_Store
+
+# Dependencies
+node_modules/
+bower_components/
+.bundle/
+vendor/
+
+# Jekyll build
+.sass-cache
+.jekyll-metadata
+
+# Heroku
+.env

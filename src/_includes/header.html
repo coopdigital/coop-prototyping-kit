@@ -1,0 +1,45 @@
+<!-- Skip nav -->
+<nav class="skip-nav">
+    <ul>
+        <li><a accesskey="c" href="#main" title="Skip to main content">Skip to content</a></li>
+        <li><a accesskey="n" href="#navigation" title="Skip to primary navigation">Skip to navigation</a></li>
+    </ul>
+</nav>
+<!-- /Skip nav -->
+
+<!-- Top bar -->
+<div class="top-bar">
+    <div class="wrap">
+        <a href="#">Become a Member</a>
+    </div>
+</div>
+<!-- /Top bar -->
+
+<!-- Main header -->
+<header class="wrap header-main">
+    <!-- Logo -->
+    <a class="coop-logo" aria-label="Homepage" href="/">
+        {% include logo.html %}
+    </a>
+    <!-- /Logo -->
+
+    <a href="/" class="identifier">Style Guide</a>
+
+    <a href="#" class="mobile-menu-toggle">
+        <span class="icon icon-menu"></span><span class="mobile-menu-text">Menu</span>
+    </a>
+</header>
+<!-- /Header -->
+
+<!-- Primary Navigation -->
+<nav id="navigation" class="nav-primary nav-standout">
+    <div class="wrap">
+
+        <ul>
+            <li><a{% if page.id == 'index' %} class="active"{% endif %} href="/">Design elements</a></li><!--
+            --><li><a{% if page.id == 'standards' %} class="active"{% endif %} href="/standards.html">Code standards</a></li>
+        </ul>
+
+    </div>
+</nav>
+<!-- /Primary Navigation -->
