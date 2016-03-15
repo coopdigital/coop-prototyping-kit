@@ -7,6 +7,7 @@
 </nav>
 <!-- /Skip nav -->
 
+{% comment %}
 <!-- Top bar -->
 <div class="top-bar">
     <div class="wrap">
@@ -14,6 +15,7 @@
     </div>
 </div>
 <!-- /Top bar -->
+{% endcomment %}
 
 <!-- Main header -->
 <header class="wrap header-main">
@@ -23,7 +25,9 @@
     </a>
     <!-- /Logo -->
 
-    <a href="/" class="identifier">Style Guide</a>
+    {% comment %}
+    <a href="/" class="identifier">Digital</a>
+    {% endcomment %}
 
     <a href="#" class="mobile-menu-toggle">
         <span class="icon icon-menu"></span><span class="mobile-menu-text">Menu</span>
@@ -36,8 +40,8 @@
     <div class="wrap">
 
         <ul>
-            <li><a{% if page.id == 'index' %} class="active"{% endif %} href="/">Design elements</a></li><!--
-            --><li><a{% if page.id == 'standards' %} class="active"{% endif %} href="/standards.html">Code standards</a></li>
+            <li><a{% if page.id == 'index' %} class="active"{% endif %} href="/">Home</a></li><!--
+            --><li><a{% if page.id == 'page-two' %} class="active"{% endif %} href="#">Page two</a></li>
         </ul>
 
     </div>
