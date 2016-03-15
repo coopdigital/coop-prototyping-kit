@@ -131,7 +131,7 @@ gulp.task('watch', function() {
   gulp.watch(src_paths.styles, ['lintscss', 'css']);
   gulp.watch(src_paths.scripts, ['lintjs', 'js']);
   gulp.watch(src_paths.assets, ['assets']);
-  gulp.watch(src_paths.html, ['html']);
+  gulp.watch([src_paths.html, src + '_config.yml'], ['html']);
 });
 
 
