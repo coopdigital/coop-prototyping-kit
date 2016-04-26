@@ -7,6 +7,7 @@ bower_components/
 vendor/
 
 # Jekyll build
+build/
 .sass-cache
 .jekyll-metadata
 
