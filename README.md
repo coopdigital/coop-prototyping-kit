@@ -65,9 +65,14 @@ In the Settings tab, add the following Config variables and set them to your cho
   - `USERNAME`
   - `PASSWORD`
 
-#### Configure automated deployment
+#### Configure buildpacks:
+Still in the Settings tab, make sure both the _Ruby_ and _NodeJS_ buildpacks have been added to the app:
+- `heroku/ruby`
+- `heroku/nodejs`
+
+#### Configure automated deployment:
 - In the Deploy tab, choose 'Connect to Github' as a deployment method
 - Search for and connect to the repository you have created
-- Enable Automatic Deploys for this app
+- Enable Automatic Deploys for this app if needed
 
-Once all this is set up, your prototype will automatically be deployed to Heroku when changes are pushed to the `master` branch.
+You can test that your app is building and deploying correctly by running a manual deployment from the Deploy tab. If you have enabled automatic deploys, the app will automatically rebuild and deploy when changes are pushed to the master branch.
