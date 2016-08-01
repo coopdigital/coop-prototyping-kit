@@ -70,6 +70,8 @@ Still in the Settings tab, make sure both the _Ruby_ and _NodeJS_ buildpacks hav
 - `heroku/ruby`
 - `heroku/nodejs`
 
+**_NOTE: the buildpacks need to be added in this order, as the Jekyll Gem needs to be installed before the main Gulp task it run._**
+
 #### Configure automated deployment:
 - In the Deploy tab, choose 'Connect to Github' as a deployment method
 - Search for and connect to the repository you have created
