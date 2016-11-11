@@ -6,9 +6,6 @@ description: Co-op Prototyping Kit
 baseurl: ""
 url: "http://coop-prototyping-kit.heroku.com"
 
-# Site attributes
-show_logo: false
-
 # Build settings
 source: ./
 destination: ../build
