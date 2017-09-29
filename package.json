@@ -2,7 +2,7 @@
   "name": "coop-prototyping-toolkit",
   "private": true,
   "dependencies": {
-    "coop-frontend-toolkit": "coopdigital/coop-frontend-toolkit#2.0.0",
+    "coop-frontend-toolkit": "coopdigital/coop-frontend-toolkit#2.0.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
