@@ -1,0 +1,53 @@
+---
+layout: default
+id: form
+---
+<div class="wrap">
+    <div class="row">
+        <div class="column medium-7">
+            <h1>Form</h1>
+
+            <form action="summary.html" method="post">
+                <div class="form-row">
+                    <label for="name">Your name</label>
+                    <input id="name" type="text" name="name">
+                </div>
+
+                <div class="form-row">
+                    <label for="job">Your job</label>
+                    <select name="job">
+                        <option value="Director">Director</option>
+                        <option value="Pawn">Pawn</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="summary">Summary</label>
+                    <textarea name="summary" id="summary" cols="30" rows="4"></textarea>
+                </div>
+
+                <fieldset class="form-row">
+                    <legend>Do you agree?</legend>
+                    <div class="input input-tap">
+                        <label class="block-label"><input type="radio" name="agree" value="Yes"> Yes</label>
+                        <label class="block-label"><input type="radio" name="agree" value="No"> No</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-row">
+                    <legend>Check all that apply</legend>
+                    <div class="input input-tap">
+                        <label class="block-label"><input type="checkbox" name="by_phone" value="1"> Phone</label>
+                        <label class="block-label"><input type="checkbox" name="by_email" value="1"> Email</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-row">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </form>
+
+            <p><a href="summary.html">View summary</a></p>
+        </div>
+    </div>
+</div>
