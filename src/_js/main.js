@@ -1,1 +1,1 @@
-
+var storeForms = new storeForms();

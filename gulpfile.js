@@ -142,7 +142,16 @@ gulp.task('connect', function() {
   connect.server({
     port: 9000,
     root: 'build',
-    livereload: true
+    livereload: true,
+    middleware: function(connect, opt) {
+		return [
+			function(req, res, next){
+				// treat POST request like GET during dev
+				req.method = 'GET';
+				return next();
+			}
+		];
+	},
   });
 });
 

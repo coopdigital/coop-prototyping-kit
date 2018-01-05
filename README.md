@@ -2,8 +2,6 @@
 
 The Co-op Prototyping Kit helps quickly create prototypes and showcase them on Heroku.
 
----
-
 ## Creating a new prototype
 
 The easiest way to start a new prototype is to first [download the Prototyping Kit](https://github.com/coopdigital/coop-prototyping-kit/archive/0.1.0.zip) as a zip and extract the contents to your machine.
@@ -12,7 +10,7 @@ The easiest way to start a new prototype is to first [download the Prototyping K
 
 This project uses [Jekyll](http://jekyllrb.com/) to generate pages, and various NPM packages with [Gulp](http://gulpjs.com/) to compile the assets into the `build` directory. To install all the necessary dependencies:
 
-```
+```sh
 bundle install
 npm install
 ```
@@ -21,21 +19,61 @@ Once dependencies have been installed, you can build and serve your prototype lo
 
 The default gulp task will build and compile all the assets, start a local server, and watch for file changes:
 
-```
+```sh
 gulp
 ```
 
-_Note: for the browser to reload automatically when a file changes, you will need to install the LiveReload extension._
+A local version of the prototype will now be accessible at <http://localhost:9000>.
 
-#### Run the prototype on a local server
+_Note: for the browser to reload automatically when a file changes, you will need to [install the LiveReload extension](http://livereload.com/extensions/)._
 
-If you simply need to view the prototype on your computer, you can run the server without re-building the prototype or starting the watch task:
+---
 
+## Saving and showing form data
+
+The Prototyping Kit includes a simple way of saving data entered in forms, as well as displaying the saved data. Data is stored locally on the computer running the prototype and disappears at the end of the session, when the browser window is closed.
+
+You can see an example form by running the server locally and opening <http://localhost:9000/form.html>.
+
+### Setting up form data storage
+
+Form data storage is enabled by default using the `sessionStorage` browser API, which means all the data is cleared when the browser window is closed.
+
+If you want to retain the data in the browser between sessions, you need to initiate the storage using the `localStorage` browser API in `src/_js/main.js`:
+
+```js
+var storeForms = new storeForms('localStorage');
 ```
-gulp connect
+
+### Saving data
+
+Data entered in forms is saved automatically. SImply make sure the form fields have a `name` attribute -- this will be used as the key to each piece of data.
+
+An example form can be found in [`src/form.html`](https://github.com/coopdigital/coop-prototyping-kit/blob/master/src/form.html)
+
+### Displaying saved data
+
+To display data, create HTML elements with the `data-name` attribute equal to the key of the data you want to display -- when the page loads, the contents of the element will be replaced by the data, if it exists.
+
+For instance, to display the data entered in an input field called `job`, you would use:
+
+```html
+<p data-name="job"></p>
 ```
 
-A local version of the prototype will then be accessible at <http://localhost:9000>.
+#### Show/hide depending on data value
+
+You can show and hide HTML elements depending on the value of the data by using the `data-show-if` and `data-hide-if` attributes alongside the `data-name` attribute:
+
+```html
+<!-- shown if job equals 'teacher' -->
+<span data-name="job" data-show-if="teacher">This is visible if job equals 'teacher'</span>
+
+<!-- hidden if job equals 'manager' -->
+<span data-name="job" data-hide-if="manager">This is hidden if job equals 'manager'</span>
+```
+
+Examples of displaying data can be found in [`src/summary.html`](https://github.com/coopdigital/coop-prototyping-kit/blob/master/src/summary.html)
 
 ---
 
