@@ -1,8 +1,13 @@
 (function() {
   'use strict';
 
-  var storeForms = function() {
-    this.storageType = 'sessionStorage';
+  window.storeForms = function(storageType) {
+    this.setStorage(storageType);
+    return this.init();
+  };
+
+  storeForms.prototype.setStorage = function(storageType) {
+    this.storageType = storageType ? storageType : 'sessionStorage';
   };
 
   storeForms.prototype.init = function() {
@@ -141,7 +146,4 @@
         return field.value;
     }
   };
-
-  window.storeForms = new storeForms();
-  window.storeForms.init();
 }());
