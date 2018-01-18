@@ -83,10 +83,10 @@ If you want to publish your prototype to Heroku, a few more steps are necessary:
 
 ### 1. Create the prototype repository
 
-[Create a new repository](https://github.com/organizations/coopdigital/repositories/new) for your prototype on the Co-op Github account (make sure the new repository is set to _Private_).
+Create a new repository for your prototype on Github (make sure the new repository is set to _Private_ if necessary).
 
 Link your local copy to the newly created Github repository. Make sure that you change your-repository-name to the name of the repository which you made above:
-```
+```sh
 cd your-prototype
 git init
 git commit -a -m "Initial commit"
@@ -94,16 +94,14 @@ git remote add origin git@github.com:coopdigital/your-repository-name.git
 git push -u origin master
 ```
 
-(Inside 1 Angel Square, you can't use Git commands over HTTPS, only via SSH. This is because, we think, the WebSense egress proxy mangles the traffic.)
-
 ### 2. Create the prototype app on Heroku
 
 The next step is to [create a new app on Heroku](https://dashboard.heroku.com/new). Once this has been done, you'll need to configure a couple of things:
 
 #### Configure HTTP authentication:
 In the Settings tab, add the following Config variables and set them to your choosing:
-  - `USERNAME`
-  - `PASSWORD`
+- `USERNAME`
+- `PASSWORD`
 
 #### Configure buildpacks:
 Still in the Settings tab, make sure both the _Ruby_ and _NodeJS_ buildpacks have been added to the app:
