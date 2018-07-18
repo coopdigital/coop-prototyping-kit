@@ -67,22 +67,11 @@ You can show and hide HTML elements depending on the value of the data by using 
 
 ```html
 <!-- shown if job equals 'teacher' -->
-<span data-name="job" data-show-if="teacher">This is visible if 'job' equals 'teacher'</span>
+<span data-name="job" data-show-if="teacher">This is visible if job equals 'teacher'</span>
 
 <!-- hidden if job equals 'manager' -->
-<span data-name="job" data-hide-if="manager">This is hidden if 'job' equals 'manager'</span>
+<span data-name="job" data-hide-if="manager">This is hidden if job equals 'manager'</span>
 ```
-
-You can also show and hide HTML elements depending on whether the data has a value or not. To do so, use the `data-show-if` or `data-hide-if` above with a value of `:empty`:
-
-```html
-<!-- shown if job is empty -->
-<span data-name="job" data-show-if=":empty">This is visible if 'job' is empty.</span>
-
-<!-- hidden if job is empty -->
-<span data-name="job" data-hide-if=":empty">This is hidden if 'job' is empty.</span>
-```
-
 
 Examples of displaying data can be found in [`src/summary.html`](https://github.com/coopdigital/coop-prototyping-kit/blob/master/src/summary.html)
 

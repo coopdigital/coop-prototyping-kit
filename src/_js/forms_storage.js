@@ -51,22 +51,12 @@
 
       if (name) {
         if (showIf) {
-          if (showIf === ':empty') {
-            if (value) {
-              placeholder.style.display = 'none';
-            }
-          }
-          else if (showIf !== value) {
+          if (showIf !== value) {
             placeholder.style.display = 'none';
           }
         }
         else if (hideIf) {
-          if (hideIf === ':empty') {
-            if (!value) {
-              placeholder.style.display = 'none';
-            }
-          }
-          else if (hideIf === value) {
+          if (hideIf === value) {
             placeholder.style.display = 'none';
           }
         }
@@ -153,7 +143,7 @@
       case 'checkbox':
         return field.checked ? field.value : '';
       default:
-        return field.value.trim();
+        return field.value;
     }
   };
 }());
