@@ -8,6 +8,11 @@ id: summary
             <h1>Your answers</h1>
 
             <p><strong>Your name:</strong> <span data-name="name"></span></p>
+
+            <p data-name="name" data-hide-if=":empty">You have provided your name.</p>
+
+            <p data-name="name" data-show-if=":empty">You have <em>not</em> provided your name.</p>
+
             <p data-name="name" data-show-if="John">This is only shown if the name is John.</p>
 
             <p><strong>Your job:</strong> <span data-name="job"></span></p>

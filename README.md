@@ -4,7 +4,7 @@ The Co-op Prototyping Kit helps quickly create prototypes and showcase them on H
 
 ## Creating a new prototype
 
-The easiest way to start a new prototype is to first [download the Prototyping Kit](https://github.com/coopdigital/coop-prototyping-kit/archive/0.1.0.zip) as a zip and extract the contents to your machine.
+The easiest way to start a new prototype is to first [download the Prototyping Kit](https://github.com/coopdigital/coop-prototyping-kit/releases/latest) and extract the contents to your machine.
 
 ### Local development
 
@@ -67,11 +67,22 @@ You can show and hide HTML elements depending on the value of the data by using 
 
 ```html
 <!-- shown if job equals 'teacher' -->
-<span data-name="job" data-show-if="teacher">This is visible if job equals 'teacher'</span>
+<span data-name="job" data-show-if="teacher">This is visible if 'job' equals 'teacher'</span>
 
 <!-- hidden if job equals 'manager' -->
-<span data-name="job" data-hide-if="manager">This is hidden if job equals 'manager'</span>
+<span data-name="job" data-hide-if="manager">This is hidden if 'job' equals 'manager'</span>
 ```
+
+You can also show and hide HTML elements depending on whether the data has a value or not. To do so, use the `data-show-if` or `data-hide-if` above with a value of `:empty`:
+
+```html
+<!-- shown if job is empty -->
+<span data-name="job" data-show-if=":empty">This is visible if 'job' is empty.</span>
+
+<!-- hidden if job is empty -->
+<span data-name="job" data-hide-if=":empty">This is hidden if 'job' is empty.</span>
+```
+
 
 Examples of displaying data can be found in [`src/summary.html`](https://github.com/coopdigital/coop-prototyping-kit/blob/master/src/summary.html)
 
@@ -83,10 +94,10 @@ If you want to publish your prototype to Heroku, a few more steps are necessary:
 
 ### 1. Create the prototype repository
 
-[Create a new repository](https://github.com/organizations/coopdigital/repositories/new) for your prototype on the Co-op Github account (make sure the new repository is set to _Private_).
+Create a new repository for your prototype on Github (make sure the new repository is set to _Private_ if necessary).
 
 Link your local copy to the newly created Github repository. Make sure that you change your-repository-name to the name of the repository which you made above:
-```
+```sh
 cd your-prototype
 git init
 git commit -a -m "Initial commit"
@@ -94,16 +105,14 @@ git remote add origin git@github.com:coopdigital/your-repository-name.git
 git push -u origin master
 ```
 
-(Inside 1 Angel Square, you can't use Git commands over HTTPS, only via SSH. This is because, we think, the WebSense egress proxy mangles the traffic.)
-
 ### 2. Create the prototype app on Heroku
 
 The next step is to [create a new app on Heroku](https://dashboard.heroku.com/new). Once this has been done, you'll need to configure a couple of things:
 
 #### Configure HTTP authentication:
 In the Settings tab, add the following Config variables and set them to your choosing:
-  - `USERNAME`
-  - `PASSWORD`
+- `USERNAME`
+- `PASSWORD`
 
 #### Configure buildpacks:
 Still in the Settings tab, make sure both the _Ruby_ and _NodeJS_ buildpacks have been added to the app:
