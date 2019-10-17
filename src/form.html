@@ -2,48 +2,61 @@
 layout: default
 id: form
 ---
-<div class="wrap">
-    <div class="row">
-        <div class="column medium-7">
-            <h1>Form</h1>
+<div class="coop-l-wrap">
+    <div class="coop-l-row coop-u-margin-b-64">
+        <div class="coop-l-column coop-l-large-6">
 
-            <form action="summary.html" method="post">
-                <div class="form-row">
+            <h1>Form example</h1>
+
+            <form action="summary.html" method="get">
+                <div class="coop-u-margin-b-32">
                     <label for="name">Your name</label>
                     <input id="name" type="text" name="name">
                 </div>
 
-                <div class="form-row">
+                <div class="coop-u-margin-b-32">
                     <label for="job">Your job</label>
-                    <select name="job">
+                    <select id="job" name="job">
                         <option value="Director">Director</option>
                         <option value="Pawn">Pawn</option>
                     </select>
                 </div>
 
-                <div class="form-row">
-                    <label for="summary">Summary</label>
-                    <textarea name="summary" id="summary" cols="30" rows="4"></textarea>
+                <div class="coop-u-margin-b-32">
+                    <label for="address">Your address</label>
+                    <textarea name="address" id="address" cols="30" rows="4"></textarea>
                 </div>
 
-                <fieldset class="form-row">
-                    <legend>Do you agree?</legend>
-                    <div class="input input-tap">
-                        <label class="block-label"><input type="radio" name="agree" value="Yes"> Yes</label>
-                        <label class="block-label"><input type="radio" name="agree" value="No"> No</label>
-                    </div>
-                </fieldset>
+                <div class="coop-c-form-choice coop-u-margin-b-32">
+                    <fieldset class="coop-c-form-choice">
+                        <legend class="coop-c-form-choice__legend">Type of delivery</legend>
+                        <div class="coop-c-form-choice">
+                            <input type="radio" name="option" id="option-1" value="Free delivery" class="coop-c-form-choice__input coop-c-form-choice__input--radio-button">
+                            <label class="coop-c-form-choice__label" for="option-1">Free delivery</label>
+                        </div>
+                        <div class="coop-c-form-choice">
+                            <input type="radio" name="option" id="option-2" value="Next day delivery" class="coop-c-form-choice__input coop-c-form-choice__input--radio-button">
+                            <label class="coop-c-form-choice__label" for="option-2">Next day delivery — £4.99</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-                <fieldset class="form-row">
-                    <legend>Check all that apply</legend>
-                    <div class="input input-tap">
-                        <label class="block-label"><input type="checkbox" name="by_phone" value="1"> Phone</label>
-                        <label class="block-label"><input type="checkbox" name="by_email" value="1"> Email</label>
-                    </div>
-                </fieldset>
+                <div class="coop-c-form-choice coop-u-margin-b-32">
+                    <fieldset class="coop-c-form-choice">
+                        <legend class="coop-c-form-choice__legend">Get updates by:</legend>
+                        <div class="coop-c-form-choice">
+                            <input type="checkbox" name="updates_by_phone" id="updates_by_phone" value="1" class="coop-c-form-choice__input coop-c-form-choice__input--checkbox">
+                            <label for="updates_by_phone" class="coop-c-form-choice__label">Phone</label>
+                        </div>
+                        <div class="coop-c-form-choice">
+                            <input type="checkbox" name="updates_by_email" id="updates_by_email" value="1" class="coop-c-form-choice__input coop-c-form-choice__input--checkbox">
+                            <label for="updates_by_email" class="coop-c-form-choice__label">Email</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-                <div class="form-row">
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                <div class="coop-u-margin-b-32">
+                    <button class="coop-btn coop-btn--primary">Submit</button>
                 </div>
             </form>
 
