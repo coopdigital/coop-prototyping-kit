@@ -1,6 +1,9 @@
 {
   "name": "coop-prototyping-toolkit",
   "private": true,
+  "engines": {
+    "node": "8.6.0"
+  },
   "dependencies": {
     "coop-frontend-toolkit": "coopdigital/coop-frontend-toolkit#2.1.4",
     "gulp": "^3.9.1",

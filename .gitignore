@@ -1,8 +1,11 @@
+# Environment
 .DS_Store
+
+# IDE
+.idea
 
 # Dependencies
 node_modules/
-bower_components/
 .bundle/
 vendor/
 
