@@ -8,15 +8,13 @@ id: summary
 
             <h1>Your delivery choices</h1>
 
-            <p><strong>Your name:</strong> <span data-name="name"></span></p>
+            <p><strong>Your name:</strong> <span data-name="name"></span><span data-name="name" data-show-if=":empty">You have <em>not</em> provided your name.</span></p>
 
-            <p data-name="name" data-hide-if=":empty">You have provided your name.</p>
-
-            <p data-name="name" data-show-if=":empty">You have <em>not</em> provided your name.</p>
+            <p data-name="name" data-hide-if=":empty">Thank you for providing your name.</p>
 
             <p data-name="name" data-show-if="John">This is only shown if the name is John.</p>
 
-            <p><strong>Your job:</strong> <span data-name="job"></span></p>
+            <p><strong>Your age:</strong> <span data-name="age"></span></p>
 
             <p><strong>Address:</strong><br> <span data-name="address"></span></p>
 
@@ -28,7 +26,7 @@ id: summary
 
             <p data-name="updates_by_email" data-show-if="1">We will not add your email address to any marketing list.</p>
 
-            <p><a href="form.html" class="coop-btn">Edit your answers</a></p>
+            <p class="coop-u-margin-t-32"><a href="form.html" class="coop-btn">Edit your answers</a></p>
         </div>
     </div>
 </div>
