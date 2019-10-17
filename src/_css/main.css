@@ -1,0 +1,19 @@
+
+@import "css-foundations/dist/foundations.css";
+
+/* Components */
+@import "component-search/dist/component.css";
+@import "component-card/dist/card.css";
+@import "component-card--product/dist/card--product.css";
+@import "component-skipnav/dist/skipnav.css";
+@import "component-signpost/dist/signpost.css"; 
+
+.coop-logo path {
+    fill: #00b1e7;
+    fill: var(--color-brand);
+}
+
+.ds-demo-block {
+    border: 1px solid var(--color-grey-dark);
+    background: var(--color-grey-mid);
+}

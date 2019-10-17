@@ -1,8 +1,11 @@
+# Environment
 .DS_Store
+
+# IDE
+.idea
 
 # Dependencies
 node_modules/
-bower_components/
 .bundle/
 vendor/
 
@@ -10,6 +13,7 @@ vendor/
 build/
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
 
 # Heroku
 .env

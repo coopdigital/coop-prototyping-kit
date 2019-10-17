@@ -22,7 +22,6 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     mercenary (0.3.5)
-    puma (3.1.0)
     rack (1.6.4)
     rake (10.5.0)
     rb-fsevent (0.9.7)
@@ -41,12 +40,11 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   kramdown
-  puma
   rack
   scss_lint
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.5.5p157
 
 BUNDLED WITH
-   1.13.0
+   1.17.3

@@ -2,12 +2,789 @@
 layout: default
 id: index
 ---
-<div class="wrap">
-    <div class="row">
-        <div class="column medium-7">
-            <h1>Prototyping Kit</h1>
-            <p>This is the Co-op Prototyping Kit. It is useful for quickly creating prototypes, and publishing them on Heroku. For more information, please <a href="https://github.com/coopdigital/coop-prototyping-kit/blob/master/README.md">consult the&nbsp;README</a>.</p>
-            <p class-"bold">Make sure you set up authentication credentials before deploying your prototype to&nbsp;Heroku.</p>
+<div class="coop-l-wrap">
+    <div class="coop-l-row coop-u-margin-b-64">
+        <div class="coop-l-column coop-l-large-6">
+            <h1>Co-op Gulp Prototyping Kit</h1>
+            <p>This is every foundation on one page. It is used as the source of truth for visual regression testing when developing the design system.</p>
+            <p>The Prototyping Kit also provides a simple mechanism for saving and displaying simple form data, <a
+                    href="form.html">example here</a>.</p>
         </div>
+    </div>
+    <div class="coop-u-margin-b-64">
+        <h2>Logo</h2>
+        <a class="coop-logo" aria-label="Homepage" href="/">
+            {% include logo.html %}
+        </a>
+    </div>
+    <div class="coop-u-margin-b-64">
+        <h2>Typography</h2>
+        <h1 class="coop-t-h-mega">Heading mega</h1>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p class="coop-t-lead-p">Intro paragraph</p>
+        <p>Paragraph</p>
+        <a href="">Link</a>
+        <h2>Typography utilities</h2>
+        <p class="coop-t-font-size-14">Size 14</p>
+        <p class="coop-t-font-size-16">Size 16</p>
+        <p class="coop-t-font-size-18">Size 18</p>
+        <p class="coop-t-font-size-20">Size 20</p>
+        <p class="coop-t-font-size-22">Size 22</p>
+        <p class="coop-t-font-size-24">Size 24</p>
+        <p class="coop-t-font-size-26">Size 26</p>
+        <p class="coop-t-font-size-28">Size 28</p>
+        <p class="coop-t-font-size-30">Size 30</p>
+        <p class="coop-t-font-size-32">Size 32</p>
+    </div>
+    <div class="coop-u-margin-b-64">
+        <h2>Bullet list</h2>
+        <p>The meeting agenda will be:</p>
+        <ul>
+            <li>an overview of the last month</li>
+            <li>a presentation</li>
+            <li>a special announcement</li>
+        </ul>
+        <h2>Numbered list</h2>
+        <p>Before leaving the house:</p>
+        <ol>
+            <li>Put on socks.</li>
+            <li>Put on shoes.</li>
+            <li>Tie laces.</li>
+        </ol>
+    </div>
+    <div class="coop-u-margin-b-64">
+        <h2>Quotation</h2>
+        <blockquote>
+            <p>&lsquo;Use hanging punctuation to style a quotation. A &#8220;quote within a quote&#8221; should use double quotation&nbsp;marks.&rsquo;</p>
+            <cite>The design team</cite>
+        </blockquote>
+        <blockquote>
+            <p class="coop-t-h2">‘Or you can have a bigger&nbsp;one.’</p>
+            <cite>The design team</cite>
+        </blockquote>
+    </div>
+    <div class="coop-u-margin-b-64">
+        <h2>Colour palette</h2>
+        <div class="coop-l-row">
+            <div class="coop-l-column coop-l-large-12">
+                <section>
+                    <h3>White and greys</h3>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-white-bg coop-u-border coop-u-padding-16">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">White</li>
+                                        <li>#FFFFFF</li>
+                                        <li>var(--color-white)</li>
+                                        <li>class="coop-u-white-bg"</li>
+                                        <li>class="coop-u-white"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-grey-light-bg coop-u-padding-16">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Light grey</li>
+                                        <li>#F3F3F3</li>
+                                        <li>var(--color-grey-light)</li>
+                                        <li>class="coop-u-grey-light"</li>
+                                        <li>class="coop-u-grey-light-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-grey-mid-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Mid grey</li>
+                                        <li>#C4C4C4</li>
+                                        <li>var(--color-grey-mid)</li>
+                                        <li>class="coop-u-grey-mid"</li>
+                                        <li>class="coop-u-grey-mid-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class=" coop-u-padding-16 coop-u-grey-dark-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Dark grey</li>
+                                        <li>#6E6E6E</li>
+                                        <li>var(--color-grey-dark)</li>
+                                        <li>class="coop-u-grey-dark"</li>
+                                        <li>class="coop-u-grey-dark-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class=" coop-u-padding-16 coop-u-text-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Text grey</li>
+                                        <li>#6E6E6E</li>
+                                        <li>var(--color-text)</li>
+                                        <li>class="coop-u-text"</li>
+                                        <li>class="coop-u-text-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Yellows</h3>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-yellow-bright-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Bright</li>
+                                        <li>#FFFF00</li>
+                                        <li>var(--color-yellow-bright)</li>
+                                        <li>class="coop-u-yellow-bright"</li>
+                                        <li>class="coop-u-yellow-bright-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-yellow-light-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Light</li>
+                                        <li>#FFEC00</li>
+                                        <li>var(--color-yellow-light)</li>
+                                        <li>class="coop-u-yellow-light"</li>
+                                        <li>class="coop-u-yellow-light-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-yellow-mid-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Mid</li>
+                                        <li>#FFD308</li>
+                                        <li>var(--color-yellow-mid)</li>
+                                        <li>class="coop-u-yellow-mid"</li>
+                                        <li>class="coop-u-yellow-mid-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Greens</h3>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-green-bright-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Bright</li>
+                                        <li>#EDFB3C</li>
+                                        <li>var(--color-green-bright)</li>
+                                        <li>class="coop-u-green-bright"</li>
+                                        <li>class="coop-u-green-bright-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-green-light-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Light</li>
+                                        <li>#BAD303</li>
+                                        <li>var(--color-green-light)</li>
+                                        <li>class="coop-u-green-light"</li>
+                                        <li>class="coop-u-green-light-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-green-mid-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Mid</li>
+                                        <li>#4F820D</li>
+                                        <li>var(--color-green-mid)</li>
+                                        <li>class="coop-u-green-mid"</li>
+                                        <li>class="coop-u-green-mid-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-green-dark-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Dark</li>
+                                        <li>#385C0A</li>
+                                        <li>var(--color-green-dark)</li>
+                                        <li>class="coop-u-green-dark"</li>
+                                        <li>class="coop-u-green-dark-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Green blues</h3>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-green-blue-bright-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Bright</li>
+                                        <li>#0AFBFB</li>
+                                        <li>var(--color-turquoise-bright)</li>
+                                        <li>class="coop-u-green-blue-bright"</li>
+                                        <li>class="coop-u-green-blue-bright-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-green-blue-light-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Light</li>
+                                        <li>#72DCDB</li>
+                                        <li>var(--color-turquoise-light)</li>
+                                        <li>class="coop-u-green-blue-light"</li>
+                                        <li>class="coop-u-green-blue-light-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-green-blue-mid-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Mid</li>
+                                        <li>#0F8482</li>
+                                        <li>var(--color-turquoise-mid)</li>
+                                        <li>class="coop-u-green-blue-mid"</li>
+                                        <li>class="coop-u-green-blue-mid-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-green-blue-dark-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Dark</li>
+                                        <li>#166D66</li>
+                                        <li>var(--color-turquoise-dark)</li>
+                                        <li>class="coop-u-green-blue-dark"</li>
+                                        <li>class="coop-u-green-blue-dark-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Blues</h3>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-blue-bright-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Bright</li>
+                                        <li>#418CFC</li>
+                                        <li>var(--color-blue-bright)</li>
+                                        <li>class="coop-u-blue-bright"</li>
+                                        <li>class="coop-u-blue-bright-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-blue-light-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Light</li>
+                                        <li>#92D8FE</li>
+                                        <li>var(--color-blue-light)</li>
+                                        <li>class="coop-u-blue-light"</li>
+                                        <li>class="coop-u-blue-light-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-blue-mid-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Mid</li>
+                                        <li>#326BB7</li>
+                                        <li>var(--color-blue-mid)</li>
+                                        <li>class="coop-u-blue-mid"</li>
+                                        <li>class="coop-u-blue-mid-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4 equal-height">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-blue-dark-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Dark</li>
+                                        <li>#334C89</li>
+                                        <li>var(--color-blue-dark)</li>
+                                        <li>class="coop-u-blue-dark"</li>
+                                        <li>class="coop-u-blue-dark-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Pinks and Purples</h3>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4 equal-height">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-pink-bright-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Bright</li>
+                                        <li>#FC43D3</li>
+                                        <li>var(--color-pink-bright)</li>
+                                        <li>class="coop-u-pink-bright"</li>
+                                        <li>class="coop-u-pink-bright-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4 equal-height">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-pink-light-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Light</li>
+                                        <li>#FF80D3</li>
+                                        <li>var(--color-pink-light)</li>
+                                        <li>class="coop-u-pink-light"</li>
+                                        <li>class="coop-u-pink-light-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4 equal-height">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-purple-mid-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Mid</li>
+                                        <li>#AD208E</li>
+                                        <li>var(--color-purple-mid)</li>
+                                        <li>class="coop-u-purple-mid"</li>
+                                        <li>class="coop-u-purple-mid-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4 equal-height">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-purple-dark-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Dark</li>
+                                        <li>#61307D</li>
+                                        <li>var(--color-purple-dark)</li>
+                                        <li>class="coop-u-purple-dark"</li>
+                                        <li>class="coop-u-purple-dark-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Reds and Oranges</h3>
+                    <div class="coop-l-row coop-u-margin-b-32">
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-orange-mid-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition">
+                                        <li class="coop-t-bold">Mid</li>
+                                        <li>#F8642C</li>
+                                        <li>var(--color-orange-mid)</li>
+                                        <li>class="coop-u-orange-mid"</li>
+                                        <li>class="coop-u-orange-mid-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4 equal-height">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-red-mid-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Mid</li>
+                                        <li>#D63118</li>
+                                        <li>var(--color-red-mid)</li>
+                                        <li>class="coop-u-red-mid"</li>
+                                        <li>class="coop-u-red-mid-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coop-l-column coop-l-small-6 coop-l-medium-4 equal-height">
+                            <div class="dm-colour">
+                                <div class="coop-u-padding-16 coop-u-red-dark-bg">
+                                    <ul class="coop-u-list-bare dm-colour__definition coop-u-white">
+                                        <li class="coop-t-bold">Dark</li>
+                                        <li>#9F2A00</li>
+                                        <li>var(--color-red-dark)</li>
+                                        <li>class="coop-u-red-dark"</li>
+                                        <li>class="coop-u-red-dark-bg"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="coop-u-margin-b-64">
+        <h2>Forms</h2>
+        <div class="coop-u-margin-b-32">
+            <h3>Text input</h3>
+            <label for="full-name" class="">Full name</label>
+            <input type="text" name="full-name" id="full-name">
+        </div>
+        <div class="coop-u-margin-b-32">
+            <h3>Text area</h3>
+            <label for="feedback">Tell us what you liked or what we can improve</label>
+            <textarea id="feedback" cols="30" rows="4"></textarea>
+        </div>
+        <div class="coop-u-margin-b-32">
+            <h3>Checkboxes and radios</h3>
+            <div class="coop-c-form-choice">
+                <fieldset class="coop-c-form-choice">
+                    <legend class="coop-c-form-choice__legend">Do you own:</legend>
+                    <div class="coop-c-form-choice">
+                        <input type="checkbox" name="option" id="checkbox" value="2" class="coop-c-form-choice__input coop-c-form-choice__input--checkbox">
+                        <label for="checkbox" class="coop-c-form-choice__label">a business</label>
+                    </div>
+                    <div class="coop-c-form-choice">
+                        <input type="checkbox" name="option" id="checkbox-2" value="2" class="coop-c-form-choice__input coop-c-form-choice__input--checkbox">
+                        <label for="checkbox-2" class="coop-c-form-choice__label">agricultural property</label>
+                    </div>
+                    <div class="coop-c-form-choice">
+                        <input type="checkbox" name="option" id="checkbox-3" value="2" class="coop-c-form-choice__input coop-c-form-choice__input--checkbox">
+                        <label for="checkbox-3" class="coop-c-form-choice__label">foreign property</label>
+                    </div>
+                    <div class="coop-c-form-choice">
+                        <input type="checkbox" name="option" id="checkbox-4" value="2" class="coop-c-form-choice__input coop-c-form-choice__input--checkbox">
+                        <label for="checkbox-4" class="coop-c-form-choice__label">trademarks or patents</label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="coop-u-margin-b-32">
+            <fieldset class="coop-c-form-choice">
+                <legend class="coop-c-form-choice__legend">Type of delivery</legend>
+                <div class="coop-c-form-choice">
+                    <input type="radio" name="option" id="option-1" value="1" class="coop-c-form-choice__input coop-c-form-choice__input--radio-button">
+                    <label class="coop-c-form-choice__label" for="option-1">Free delivery</label>
+                </div>
+                <div class="coop-c-form-choice">
+                    <input type="radio" name="option" id="option-2" value="2" class="coop-c-form-choice__input coop-c-form-choice__input--radio-button">
+                    <label class="coop-c-form-choice__label" for="option-2">Next day delivery — £4.99</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="coop-u-margin-b-32">
+            <h3>Buttons</h3>
+            <button class="coop-btn coop-btn--primary">Primary button</button>
+            <button class="coop-btn">Button</button>
+        </div>
+        <div class="coop-u-margin-b-32">
+            <h3>Buttons as links</h3>
+            <a href="" class="coop-btn coop-btn--primary">Primary button</a>
+            <a href="" class="coop-btn">Button</a>
+        </div>
+    </div>
+    <div class="coop-u-margin-b-32">
+        <h2>Tables</h2>
+        <table class="coop-table">
+            <caption>This table compares our Classic and Select Plus pet insurance</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Compare Pet Insurance</th>
+                    <th scope="col">Classic</th>
+                    <th scope="col">Select Plus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Vet fees cover</th>
+                    <td>&pound;2000</td>
+                    <td>&pound;5000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Extra treatments</th>
+                    <td>Not included</td>
+                    <td>&pound;750</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="coop-u-margin-b-64">
+        <h3>Responsive table</h3>
+        <table class="coop-table coop-table-smallscreen--stacked">
+            <caption>This table compares our Classic and Select Plus pet insurance</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Compare Pet Insurance</th>
+                    <th scope="col">Classic</th>
+                    <th scope="col">Select Plus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Vet fees cover</th>
+                    <td data-th="Classic">&pound;2000</td>
+                    <td data-th="Select Plus">&pound;5000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Extra treatments</th>
+                    <td data-th="Classic">Not included</td>
+                    <td data-th="Select Plus">&pound;750</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="coop-u-margin-b-64">
+        <h2>Spacing utilities</h2>
+        <h3>Margin</h3>
+        <div class="ds-demo-block coop-u-margin-0">Margin 0px</div>
+        <div class="ds-demo-block coop-u-margin-b-0">Margin bottom 0px</div>
+        <div class="ds-demo-block coop-u-margin-2">Margin 2px</div>
+        <div class="ds-demo-block coop-u-margin-b-2">Margin bottom 2px</div>
+        <div class="ds-demo-block coop-u-margin-4">Margin 4px</div>
+        <div class="ds-demo-block coop-u-margin-b-4">Margin bottom 4px</div>
+        <div class="ds-demo-block coop-u-margin-8">Margin 8px</div>
+        <div class="ds-demo-block coop-u-margin-b-8">Margin bottom 8px</div>
+        <div class="ds-demo-block coop-u-margin-16">Margin 16px</div>
+        <div class="ds-demo-block coop-u-margin-b-16">Margin bottom 16px</div>
+        <div class="ds-demo-block coop-u-margin-32">Margin 32px</div>
+        <div class="ds-demo-block coop-u-margin-b-32">Margin bottom 32px</div>
+        <div class="ds-demo-block coop-u-margin-64">Margin 64px</div>
+        <div class="ds-demo-block coop-u-margin-b-64">Margin bottom 64px</div>
+        <div class="ds-demo-block coop-u-margin-resp-b-4-2">Margin bottom: 4px medium breakpoint > 2px small breakpoint</div>
+        <div class="ds-demo-block coop-u-margin-resp-b-8-4">Margin bottom: 8px medium breakpoint > 4px small breakpoint</div>
+        <div class="ds-demo-block coop-u-margin-resp-b-16-8">Margin bottom: 16px medium breakpoint > 8px small breakpoint</div>
+        <div class="ds-demo-block coop-u-margin-resp-b-32-16">Margin bottom: 32px medium breakpoint > 16px small breakpoint</div>
+        <div class="ds-demo-block coop-u-margin-resp-b-64-32">Margin bottom: 64px medium breakpoint > 32px small breakpoint</div>
+        <h2>Padding</h2>
+        <div class="ds-demo-block coop-u-padding-0">Padding 0px</div>
+        <div class="ds-demo-block coop-u-padding-2">Padding 2px</div>
+        <div class="ds-demo-block coop-u-padding-4">Padding 4px</div>
+        <div class="ds-demo-block coop-u-padding-8">Padding 8px</div>
+        <div class="ds-demo-block coop-u-padding-16">Padding 16px</div>
+        <div class="ds-demo-block coop-u-padding-32">Padding 32px</div>
+        <div class="ds-demo-block coop-u-padding-64">Padding 64px</div>
+        <div class="ds-demo-block coop-u-padding-resp-4-2">Padding: 4px medium breakpoint > 2px small breakpoint</div>
+        <div class="ds-demo-block coop-u-padding-resp-8-4">Padding: 8px medium breakpoint > 4px small breakpoint</div>
+        <div class="ds-demo-block coop-u-padding-resp-16-8">Padding: 16px medium breakpoint > 8px small breakpoint</div>
+        <div class="ds-demo-block coop-u-padding-resp-32-16">Padding: 32px medium breakpoint > 16px small breakpoint</div>
+        <div class="ds-demo-block coop-u-padding-resp-64-32">Padding: 64px medium breakpoint > 32px small breakpoint</div>
+    </div>
+    <div class="coop-u-margin-b-64">
+        <h3>Editorial card</h3>
+            <div class="coop-l-row">
+                <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
+                <article class="coop-c-editorialcard">
+                    <a
+                        href="#"
+                        class="coop-c-editorialcard__link"
+                        data-contenttype=""
+                        data-contentparent=""
+                        data-linktext=""
+                    >
+                        <div class="coop-c-editorialcard__inner">
+                            <figure class="coop-c-editorialcard__media">
+                                <picture class="coop-c-editorialcard__image">
+                                    <!-- if browser supports webp image format, serve the webp format-->
+                                    <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                                    <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                                    <!-- if no webp supported then default to serve progressive jpeg -->
+                                    <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                                    <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                                    <!-- fallback -->
+                                    <img src="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346" width="618" height="346" alt="">
+                                </picture>
+                            </figure>
+                            <div class="coop-c-editorialcard__content">
+                                <header class="coop-c-editorialcard__header">
+                                    <h3 class="coop-c-editorialcard__title">
+                                        <span>Find out the difference <span class="coop-u-nowrap">Co-op</span> makes as we celebrate 25 years of Fairtrade</span>
+                                    </h3>
+                                </header>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="coop-c-editorialcard">
+                    <a
+                        href="#"
+                        class="coop-c-editorialcard__link"
+                        data-contenttype=""
+                        data-contentparent=""
+                        data-linktext=""
+                    >
+                        <div class="coop-c-editorialcard__inner">
+                            <figure class="coop-c-editorialcard__media">
+                                <picture class="coop-c-editorialcard__image">
+                                    <!-- if browser supports webp image format, serve the webp format-->
+                                    <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                                    <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                                    <!-- if no webp supported then default to serve progressive jpeg -->
+                                    <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                                    <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                                    <!-- fallback -->
+                                    <img src="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346" width="618" height="346" alt="">
+                                </picture>
+                            </figure>
+                            <div class="coop-c-editorialcard__content">
+                                <header class="coop-c-editorialcard__header">
+                                    <p class="coop-c-editorialcard__subtitle">Fairtrade</p>
+                                    <h3 class="coop-c-editorialcard__title">
+                                        <span>Find out the difference <span class="coop-u-nowrap">Co-op</span> makes as we celebrate 25 years of Fairtrade</span>
+                                    </h3>
+                                </header>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                <article class="coop-c-editorialcard">
+                    <a
+                        href="#"
+                        class="coop-c-editorialcard__link"
+                        data-contenttype=""
+                        data-contentparent=""
+                        data-linktext=""
+                    >
+                        <div class="coop-c-editorialcard__inner">
+                            <figure class="coop-c-editorialcard__media">
+                                <picture class="coop-c-editorialcard__image">
+                                    <!-- if browser supports webp image format, serve the webp format-->
+                                    <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                                    <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=webp&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/webp">
+                                    <!-- if no webp supported then default to serve progressive jpeg -->
+                                    <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                                    <source srcset="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346 1x" type="image/jpeg">
+                                    <!-- fallback -->
+                                    <img src="//images.ctfassets.net/bffxiku554r1/1xIj1XR8rHSadHDMhxWyid/8c0e5d881334839a0e5809c9a8af8eca/Fairtrade_Supplier_Image.jpg?fm=jpg&amp;q=60&amp;fit=thumb&amp;w=618&amp;h=346" width="618" height="346" alt="">
+                                </picture>
+                            </figure>
+                            <div class="coop-c-editorialcard__content">
+                                <header class="coop-c-editorialcard__header">
+                                    <p class="coop-c-editorialcard__subtitle">Fairtrade</p>
+                                    <h3 class="coop-c-editorialcard__title">
+                                        <span>Find out the difference <span class="coop-u-nowrap">Co-op</span> makes as we celebrate 25 years of Fairtrade</span>
+                                    </h3>
+                                </header>
+                                <div class="coop-c-editorialcard__body">
+                                    <p>Join us in celebrating 25 years of Fairtrade by enjoying products that carry the Fairtrade Mark, or holding your own Fairtrade party.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class="coop-u-margin-b-64">
+            <h3>Signpost</h3>
+            <div class="coop-l-row">
+                <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
+                        <div class="coop-c-signpost">
+                                <a
+                                href="#"
+                                class="coop-c-signpost__link"
+                                data-contenttype=""
+                                data-contentparent=""
+                                data-linktext=""
+                                >
+                                    <div class="coop-c-signpost__content">
+                                       <h3 class="coop-c-signpost__title">
+                                           See all recipes
+                                       </h3>
+                                       <span class="coop-c-signpost__icon" aria-hidden="true">
+                                           <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                                               <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                                           </svg>
+                                       </span>
+                                    </div>
+                                </a>
+                             </div>
+
+                             <div class="coop-c-signpost">
+                                <a
+                                href="#"
+                                class="coop-c-signpost__link"
+                                data-contenttype=""
+                                data-contentparent=""
+                                data-linktext=""
+                                >
+                                    <figure class="coop-c-signpost__media">
+                                        <picture class="coop-c-signpost__image">
+                                            <!-- max image size 360w 203h -->
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=360&amp;h=203 1x,
+                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=720&amp;h=406 2x" type="image/webp">
+                                            <!-- max image size 751w 423h -->
+                                            <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423 1x,
+                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/webp">
+                                            <!-- 25.9375em / max image size 583w 329h -->
+                                            <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=583&amp;h=329 1x,
+                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/webp">
+
+                                            <!-- if no webp supported then default to serve progressive jpeg -->
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=360&amp;h=203 1x,
+                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=720&amp;h=406 2x" type="image/jpeg">
+                                            <!-- max image size 751w 423h -->
+                                            <source media="(min-width: 37.5em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=751&amp;h=423 1x,
+                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1502&amp;h=846 2x" type="image/jpeg">
+                                            <!-- 25.9375em / max image size 583w 329h -->
+                                            <source media="(min-width: 25.9375em)" srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=583&amp;h=329 1x,
+                                            //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1166&amp;h=658 2x" type="image/jpeg">
+                                            <!-- fallback -->
+                                            <img src="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423" alt="Membership">
+                                        </picture>
+                                    </figure>
+                                    <div class="coop-c-signpost__content">
+                                        <h3 class="coop-c-signpost__title">
+                                            Sign in to Membership
+                                        </h3>
+                                        <span class="coop-c-signpost__icon" aria-hidden="true">
+                                            <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                                                <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 </div>

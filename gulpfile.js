@@ -1,67 +1,87 @@
-var gulp = require('gulp');
-var scsslint = require('gulp-scss-lint');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
-var connect = require('gulp-connect');
-var concat = require('gulp-concat');
-var include = require('gulp-include');
-var jshint = require('gulp-jshint');
-var stylish = require('jshint-stylish');
-var uglify = require('gulp-uglify');
-var mocha = require('gulp-mocha');
+'use strict';
 
+const gulp = require('gulp');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const connect = require('gulp-connect');
+const concat = require('gulp-concat');
+const include = require('gulp-include');
+const jshint = require('gulp-jshint');
+const stylish = require('jshint-stylish');
+const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
+const cssimport = require('gulp-cssimport');
+const postcss = require('gulp-postcss');
+const postcssCustomMedia = require('postcss-custom-media');
+const postcssCustomProperties = require('postcss-custom-properties');
+const postcssNesting = require('postcss-nesting');
+const postcssCalc = require('postcss-calc');
+const spawn = require('child_process').spawn;
 
 /**
  * Settings
  */
-var src = 'src/';
-var dest = 'build/';
-
-var src_paths = {
-  styles: src + '_css/**/*.scss',
-  scripts: src + '_js/**/*.js',
+const src = 'src/';
+const dest = 'build/';
+ 
+const src_paths = {
+  css: src + '_css/**/*.{pcss,css}',
+  temp: src + 'temp/**/*',
+  scripts: src + '_js/*.js',
   assets: [
-    src + '_assets/**/*',
-    'node_modules/coop-frontend-toolkit/static/**/*'
+    src + '_assets/**/*'
   ],
   html: src + '**/*.html'
 };
 
-var dest_paths = {
+const dest_paths = {
   styles: dest + 'assets/css',
   scripts: dest + 'assets/js',
   assets: dest + 'assets'
 };
 
-var settings = {
-  sass: {
+const settings = {
+  css: {
     outputStyle: 'compressed',
     includePaths: [
-      'node_modules/coop-frontend-toolkit/styles/',
-      src + 'src/css'
-    ]
+      'node_modules',
+      '../node_modules',
+      src + 'src/css/main.css',
+      __dirname + '/node_modules',
+      '../node_modules/@coopdigital',
+      __dirname + '/node_modules/@coopdigital'
+    ],
   },
-  autoprefixer: {
-    browsers: ['> 5%', 'last 2 versions']
+  include: {
+    includePaths: [
+      __dirname + '/node_modules',
+      __dirname + '/src/_js',
+    ]
   }
 };
 
+const importOptions = {
+    matchPattern: "*.{pcss,css}",
+    includePaths: [
+      '../node_modules',
+      __dirname + '/node_modules',
+      '../node_modules/@coopdigital',
+      __dirname + '/node_modules/@coopdigital'
+    ]
+};
 
 
 /**
  * Lint tasks
  */
-gulp.task('lintjs', function() {
-  gulp.src(src_paths.scripts)
+function lintjs() {
+  return gulp.src([
+    src_paths.scripts,
+    '!' + src + '_js/vendor'
+  ])
     .pipe(jshint())
     .pipe(jshint.reporter(stylish));
-});
-
-gulp.task('lintscss', function() {
-  gulp.src(src_paths.styles)
-    .pipe(scsslint());
-});
+}
 
 
 /**
@@ -69,97 +89,113 @@ gulp.task('lintscss', function() {
  */
 
 // Jekyll
-gulp.task('html', ['jekyll'], function() {
-  gulp.src(dest + '**/*.html')
-    .pipe(connect.reload());
-});
-gulp.task('jekyll', function (gulpCallBack){
-  var spawn = require('child_process').spawn;
-  var jekyll = spawn('jekyll', ['build'], {stdio: 'inherit', cwd: 'src'});
-
+function jekyll(gulpCallBack) {
+  const jekyll = spawn('jekyll', ['build'], {stdio: 'inherit', cwd: 'src'});
   jekyll.on('exit', function(code) {
     gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: '+code);
   });
-});
+}
+
+function html() {
+  return gulp
+    .src(dest + '**/*.html')
+    .pipe(connect.reload());
+}
 
 // Styles
-gulp.task('css', ['lintscss'], function() {
-  gulp.src(src_paths.styles)
-    .pipe(sourcemaps.init())
-      .pipe(sass(settings.sass))
-      .on('error', sass.logError)
-      .pipe(autoprefixer(settings.autoprefixer))
-    .pipe(sourcemaps.write('maps/'))
+function css() {
+  return gulp
+    .src(src_paths.css)
+    .pipe(cssimport(importOptions))
+    .pipe(
+      postcss(
+        [
+          postcssCustomMedia(), 
+          postcssCustomProperties(),
+          postcssNesting(),
+          postcssCalc()
+        ]
+      )
+    )
+    .pipe(autoprefixer())
     .pipe(gulp.dest(dest_paths.styles))
     .pipe(connect.reload());
-});
+}
 
 // Scripts
-gulp.task('js', ['lintjs'], function() {
-  gulp.src(src_paths.scripts)
+function js() {
+  return gulp.src(src_paths.scripts)
     .pipe(sourcemaps.init())
-      .pipe(include())
+      .pipe(include(settings.include))
       .pipe(concat('main.js'))
       .pipe(uglify())
     .pipe(sourcemaps.write('maps/'))
     .pipe(gulp.dest(dest_paths.scripts))
     .pipe(connect.reload());
-});
+}
+
+function vendorjs() {
+  return gulp
+    .src([src + '_js/vendor/**/*'])
+    .pipe(gulp.dest(dest_paths.scripts + '/vendor'));
+}
 
 // Static assets
-gulp.task('assets', function() {
-  gulp.src(src_paths.assets)
+function assets() {
+  return gulp
+    .src(src_paths.assets)
     .pipe(gulp.dest(dest_paths.assets))
     .pipe(connect.reload());
-});
+}
 
-
-/**
- * Tests
- */
-gulp.task('testjs', function() {
-  gulp.src('test.js')
-    .pipe(mocha());
-});
-
+function optimiseImages() {
+  return gulp
+    .src(dest_paths.assets + '/images/**/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest(dest_paths.assets + '/images'));
+}
 
 
 /**
  * Watch tasks
  */
-gulp.task('watch', function() {
-  gulp.watch(src_paths.styles, ['lintscss', 'css']);
-  gulp.watch(src_paths.scripts, ['lintjs', 'js']);
-  gulp.watch(src_paths.assets, ['assets']);
-  gulp.watch([src_paths.html, src + '_config.yml'], ['html']);
-});
+function watch(done) {
+  gulp.watch(['src/_css/**/**.{pcss,css}'], css);
+  gulp.watch(src_paths.scripts, gulp.series(lintjs, js));
+  gulp.watch(src_paths.assets, optimiseImages);
+  gulp.watch(src_paths.html, gulp.series(jekyll, html));
+  done();
+}
 
 
 /**
  * Local server
  */
-gulp.task('connect', function() {
+function serve(done) {
   connect.server({
     port: 9000,
     root: 'build',
-    livereload: true,
-    middleware: function(connect, opt) {
-		return [
-			function(req, res, next){
-				// treat POST request like GET during dev
-				req.method = 'GET';
-				return next();
-			}
-		];
-	},
+    livereload: true
   });
-});
+  done();
+}
 
 /**
  * Run tasks
  */
-gulp.task('test', ['testjs']);
-gulp.task('build', ['html', 'css', 'js', 'assets']);
-gulp.task('server', ['build', 'watch', 'connect']);
+const build = gulp.parallel(gulp.series(jekyll), css, vendorjs, gulp.series(lintjs, js), gulp.series(assets, optimiseImages));
+const server = gulp.series(build, serve, watch);
 
-gulp.task('default', ['server']);
+
+module.exports = {
+  jekyll,
+  css,
+  vendorjs,
+  lintjs,
+  js,
+  assets,
+  optimiseImages,
+  build,
+  server,
+  default: build
+};
