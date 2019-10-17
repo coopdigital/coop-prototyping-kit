@@ -13,6 +13,7 @@ vendor/
 build/
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
 
 # Heroku
 .env
