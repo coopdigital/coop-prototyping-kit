@@ -1,0 +1,10 @@
+{
+  "name": "coop-prototyping-kit",
+  "description": "Co-op Prototyping Kit",
+  "scripts": {},
+  "env": {},
+  "formation": {},
+  "addons": [],
+  "buildpacks": [],
+  "stack": "heroku-18"
+}
