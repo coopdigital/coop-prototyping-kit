@@ -2,15 +2,23 @@
 layout: default
 id: index
 ---
-<div class="coop-l-wrap">
-    <div class="coop-l-row coop-u-margin-b-64">
-        <div class="coop-l-column coop-l-large-6">
-            <h1>Co-op Gulp Prototyping Kit</h1>
-            <p>This is every foundation on one page. It is used as the source of truth for visual regression testing when developing the design system.</p>
-            <p>The Prototyping Kit also provides a simple mechanism for saving and displaying simple form data, <a
-                    href="form.html">example here</a>.</p>
+<div class="coop-c-hero coop-c-hero--squircle">
+    <div class="coop-c-hero__inner">
+        <h1 class="coop-c-hero__title">Co-op Prototyping Kit</h1>
+        <div class="coop-c-hero__body">
+            <p>This is every foundation and component on one page. You can use these to build prototypes to test your ideas.</p>
+            <p>The Prototyping Kit also provides a simple mechanism for saving and displaying simple form data. <a href="form.html">See the example form</a>.</p>
+        </div>
+        <div class="coop-c-hero__squircle" aria-hidden="true">
+            <div class="coop-c-hero__squircle__inner">
+                <svg class="coop-c-hero__squircle__svg" viewBox="0 0 1802 1726">
+                    <path class="coop-c-hero__squircle__path" d="M1743 446.3c-49.7-167.6-173.7-299.6-339.6-362C1079.6-28.2 724.1-28.2 397 84.9 232.6 146.7 109.2 278.6 58.5 446.8 19.7 581.6 0 721.4 0 862.8s19.7 281.2 58.5 416.5c50.8 167.6 174.2 299.6 339.6 362 162.2 56.2 331.5 84.7 502.9 84.7 172 0 341.3-28.4 504-85.2 164.9-62.4 288.3-193.8 338-362 39.4-135.8 59-275.6 59-416s-19.7-280.6-59-416.5z" />
+                </svg>
+            </div>
         </div>
     </div>
+</div>
+<div class="coop-l-wrap">
     <div class="coop-u-margin-b-64">
         <h2>Logo</h2>
         <a class="coop-logo" aria-label="Homepage" href="/">
@@ -606,6 +614,43 @@ id: index
         <div class="ds-demo-block coop-u-padding-resp-64-32">Padding: 64px medium breakpoint > 32px small breakpoint</div>
     </div>
     <div class="coop-u-margin-b-64">
+        <h3>Hero</h3>        
+        <div class="coop-c-hero coop-c-hero--squircle coop-c-hero--media">
+          <div class="coop-c-hero__inner">
+              <h1 class="coop-c-hero__title">Supporting communities</h1>
+              <div class="coop-c-hero__media">
+                <picture class="coop-c-hero__image">
+                    <!-- if browser supports webp image format, serve the webp format-->
+                    <source media="(min-width: 60em)" srcset="//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338 1x,
+                                    //images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=1200&amp;h=676 2x" type="image/webp">
+                    <source srcset="//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338 1x,
+                                    //images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=1200&amp;h=676 2x" type="image/webp">
+                    <!-- if no webp supported then default to serve progressive jpeg -->
+                    <source media="(min-width: 60em)" srcset="//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=png&amp;q=60&amp;w=600&amp;h=338 1x,
+                                    //images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=png&amp;q=60&amp;w=1200&amp;h=676 2x" type="image/jpeg">
+                    <source srcset="//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=png&amp;q=60&amp;w=600&amp;h=338 1x,
+                                    //images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=png&amp;q=60&amp;w=1200&amp;h=676 2x" type="image/jpeg">
+                    <!-- fallback -->
+                    <img src="//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=png&amp;q=60&amp;w=600&amp;h=338" width="600" height="338" alt="How Co-op is supporting local communities">
+                </picture>
+              </div>
+              <div class="coop-c-hero__body">
+                  <p>Find out what community and the power of local people means to Co-op. You'll discover the great things we can achieve when we work together to create a better society.</p>
+                  <div class="coop-c-hero__link">
+                      <a href="https://coop.co.uk" class="coop-btn coop-btn--primary">Find out how you can help</a>
+                  </div>
+              </div>
+              <div class="coop-c-hero__squircle" aria-hidden="true">
+                  <div class="coop-c-hero__squircle__inner">
+                      <svg class="coop-c-hero__squircle__svg" viewBox="0 0 1802 1726">
+                          <path class="coop-c-hero__squircle__path" d="M1743 446.3c-49.7-167.6-173.7-299.6-339.6-362C1079.6-28.2 724.1-28.2 397 84.9 232.6 146.7 109.2 278.6 58.5 446.8 19.7 581.6 0 721.4 0 862.8s19.7 281.2 58.5 416.5c50.8 167.6 174.2 299.6 339.6 362 162.2 56.2 331.5 84.7 502.9 84.7 172 0 341.3-28.4 504-85.2 164.9-62.4 288.3-193.8 338-362 39.4-135.8 59-275.6 59-416s-19.7-280.6-59-416.5z" />
+                      </svg>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="coop-u-margin-b-64">
         <h3>Editorial card</h3>
             <div class="coop-l-row">
                 <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
@@ -784,6 +829,745 @@ id: index
             </div>
         </div>
 
+        <div class="coop-u-margin-b-64">
+            <h3>Product card</h3>
+            <div class="coop-l-row">
+                <div class="coop-l-column coop-l-large-3 coop-l-medium-6 coop-l-small-12">
+                        
+                    <article class="coop-c-card coop-c-card--product coop-c-card--alcohol coop-l-flex__item">                           
+                        <a href="/products/gordons-pink-gin-817029" class="coop-c-card__link coop-l-flex__item" data-contenttype="Card|Product" data-linktext="Gordon's&nbsp;Premium Pink Gin 70cl">
+                            <div class="coop-c-card__image">
+                                <picture>
+                                    <source 
+                                        srcset="//images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=webp&amp;q=60&amp;w=300&amp;h=300&amp;fit=pad 1x,
+                                                //images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=webp&amp;q=60&amp;w=600&amp;h=600&amp;fit=pad 2x" type="image/webp">
+                                    <img 
+                                        srcset="//images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=300&amp;h=300&amp;fit=pad 1x,
+                                                //images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=600&amp;h=600&amp;fit=pad 2x" 
+                                        src="//images.ctfassets.net/6jpeaipefazr/61if0aSq2WoqUo6cQsC0Sm/232f6b8924d90a68f9efb8e7db8df16e/gordons-pink-gin-817029.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=300&amp;h=300&amp;fit=pad" alt="Gordon's&nbsp;Premium Pink Gin 70cl" title="Gordon's&nbsp;Premium Pink Gin 70cl" type="image/jpeg">
+                                </picture>
+                            </div>
+                            <div class="coop-c-card__content coop-l-flex__item">
+                                <h3 class="coop-c-card__title">Gordon's&nbsp;Premium Pink Gin 70cl </h3>
+                                <p class="coop-c-card__price">£18.50</p>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="coop-u-margin-b-64">
+            <h3>Notification</h3>
+            <div class="coop-l-row">
+                <div class="coop-l-column coop-l-large-12 coop-l-medium-12 coop-l-small-12">
+                        
+                    <div class="coop-c-notification" role="status"> 
+                        <h3 class="coop-c-notification__heading">Coronavirus</h3> 
+                        <p class="coop-c-notification__p">
+                            <a href="" class="coop-c-notification__link">Read our advice and latest updates</a>
+                        </p> 
+                    </div>
+
+                </div>
+            </div>
+            <h3>Notification - Alert</h3>
+            <div class="coop-l-row">
+                <div class="coop-l-column coop-l-large-12 coop-l-medium-12 coop-l-small-12">
+                        
+                    <div class="coop-c-notification coop-c-notification--alert" role="alert"> 
+                        <h3 class="coop-c-notification__heading">Coronavirus</h3> 
+                        <p class="coop-c-notification__p">
+                            <a href="" class="coop-c-notification__link">Read our advice and latest updates</a>
+                        </p> 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="coop-u-margin-b-64">
+            <h3>Search</h3>
+            <div class="coop-l-row">
+                <div class="coop-l-column coop-l-large-12 coop-l-medium-12 coop-l-small-12">
+                        
+                    <form class="coop-c-search">
+                        <label for="search" class="coop-u-visuallyhidden">Search the [describe what the user will be searching]</label>
+                        <input type="search" name="search" id="search" placeholder="Search the design system" class="coop-form__input coop-c-search__input">
+                        <button class="coop-c-search__button">
+                            <span class="coop-u-visuallyhidden">Search</span>
+                            <svg width="32" height="32" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11z" fill="#FFFFFF" fill-rule="evenodd"/></svg>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="coop-u-margin-b-64">
+            <h3>Search</h3>
+            <div class="coop-l-row">
+                <div class="coop-l-column coop-l-large-12 coop-l-medium-12 coop-l-small-12">
+                        
+                    <form class="coop-c-search">
+                        <label for="search" class="coop-u-visuallyhidden">Search the [describe what the user will be searching]</label>
+                        <input type="search" name="search" id="search" placeholder="Search the design system" class="coop-form__input coop-c-search__input">
+                        <button class="coop-c-search__button">
+                            <span class="coop-u-visuallyhidden">Search</span>
+                            <svg width="32" height="32" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11z" fill="#FFFFFF" fill-rule="evenodd"/></svg>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="coop-u-margin-b-64">
+            <h3>Squircles</h3>
+
+                <div class="coop-l-row coop-u-margin-resp-t-64-32">
+                    <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
+                        <article class="coop-c-editorialcard">
+                            <a
+                                href="#"
+                                class="coop-c-editorialcard__link"
+                                data-contenttype=""
+                                data-contentparent=""
+                                data-linktext=""
+                            >
+                            <div class="coop-c-squircle coop-u-flex coop-u-flex-centered coop-c-squircle--new-squircle">       
+                                    <span class="coop-c-squircle__label">
+                                        <span class="coop-c-squircle__uppercase coop-c-squircle__uppercase__uppercase--new">New</span>
+                                    </span>
+                                    <span class="coop-c-squircle__media coop-u-flex coop-u-flex-centered" aria-hidden="true">
+                                        <svg width="115" height="110" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path d="M111.237 28.442c-3.17-10.683-11.083-19.094-21.674-23.069-20.664-7.17-43.351-7.17-64.227.037C14.846 9.348 6.968 17.759 3.73 28.475A95.633 95.633 0 000 54.99a96.04 96.04 0 003.73 26.547c3.242 10.683 11.116 19.094 21.674 23.069A97.897 97.897 0 0057.5 110a97.366 97.366 0 0032.164-5.432c10.526-3.974 18.4-12.352 21.57-23.069A95.02 95.02 0 00115 54.989a95.424 95.424 0 00-3.763-26.547z" id="a"/>
+                                            </defs>
+                                            <g fill-rule="nonzero" fill="none">
+                                                <use fill="#FFEC00" xlink:href="#a"/>
+                                                <use fill="#0F947C" xlink:href="#a"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="coop-c-editorialcard__inner">
+                                    <figure class="coop-c-editorialcard__media">
+                                        <picture class="coop-c-editorialcard__image">
+                                            <!-- if browser supports webp image format, serve the webp format-->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=786&amp;h=446 2x" type="image/webp">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=968&amp;h=544 2x" type="image/webp">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=1130&amp;h=634 2x" type="image/webp">
+                                            <!-- if no webp supported then default to serve progressive jpeg -->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=786&amp;h=446 2x" type="image/jpeg">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <!-- fallback -->
+                                            <img src="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317" width="565" height="317" alt="">
+                                        </picture>
+                                    </figure>
+                                    <div class="coop-c-editorialcard__content">
+                                        <header class="coop-c-editorialcard__header">
+                                            <h3 class="coop-c-editorialcard__title">
+                                                <span>Explore our range of scary sweets, creepy cupcakes and petrifying pumpkins from £1</span>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </div>
+                            </a>
+                        </article> 
+                    </div>
+                    <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
+                        <article class="coop-c-editorialcard">
+                            <a
+                                href="#"
+                                class="coop-c-editorialcard__link"
+                                data-contenttype=""
+                                data-contentparent=""
+                                data-linktext=""
+                            >
+                            <div class="coop-c-squircle coop-u-flex coop-u-flex-centered coop-c-squircle--new-squircle">       
+                                    <span class="coop-c-squircle__label">
+                                        <span class="coop-c-squircle__uppercase">New recipe</span>
+                                    </span>
+                                    <span class="coop-c-squircle__media coop-u-flex coop-u-flex-centered" aria-hidden="true">
+                                        <svg width="115" height="110" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path d="M111.237 28.442c-3.17-10.683-11.083-19.094-21.674-23.069-20.664-7.17-43.351-7.17-64.227.037C14.846 9.348 6.968 17.759 3.73 28.475A95.633 95.633 0 000 54.99a96.04 96.04 0 003.73 26.547c3.242 10.683 11.116 19.094 21.674 23.069A97.897 97.897 0 0057.5 110a97.366 97.366 0 0032.164-5.432c10.526-3.974 18.4-12.352 21.57-23.069A95.02 95.02 0 00115 54.989a95.424 95.424 0 00-3.763-26.547z" id="a"/>
+                                            </defs>
+                                            <g fill-rule="nonzero" fill="none">
+                                                <use fill="#FFEC00" xlink:href="#a"/>
+                                                <use fill="#0F947C" xlink:href="#a"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="coop-c-editorialcard__inner">
+                                    <figure class="coop-c-editorialcard__media">
+                                        <picture class="coop-c-editorialcard__image">
+                                            <!-- if browser supports webp image format, serve the webp format-->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=786&amp;h=446 2x" type="image/webp">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=968&amp;h=544 2x" type="image/webp">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=1130&amp;h=634 2x" type="image/webp">
+                                            <!-- if no webp supported then default to serve progressive jpeg -->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=786&amp;h=446 2x" type="image/jpeg">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <!-- fallback -->
+                                            <img src="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317" width="565" height="317" alt="">
+                                        </picture>
+                                    </figure>
+                                    <div class="coop-c-editorialcard__content">
+                                        <header class="coop-c-editorialcard__header">
+                                            <h3 class="coop-c-editorialcard__title">
+                                                <span>Explore our range of scary sweets, creepy cupcakes and petrifying pumpkins from £1</span>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </div>
+                            </a>
+                        </article> 
+                    </div>
+                    <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
+                        <article class="coop-c-editorialcard">
+                            <a
+                                href="#"
+                                class="coop-c-editorialcard__link"
+                                data-contenttype=""
+                                data-contentparent=""
+                                data-linktext=""
+                            >
+                                <div class="coop-c-squircle coop-u-flex coop-u-flex-centered coop-c-squircle--super_saver_squircle">       
+                                    <span class="coop-c-squircle__label">
+                                        <span class="coop-c-squircle__uppercase">Super saver</span>
+                                    </span>
+                                    <span class="coop-c-squircle__media coop-u-flex coop-u-flex-centered" aria-hidden="true">
+                                        <svg width="147" height="140" xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="none" fill-rule="evenodd">
+                                            <path fill="#CF043C" fill-rule="nonzero" d="M129.043 98.685l14.729-2.594-12.147-8.73 14.342-4.244-13.047-7.31 13.78-5.817-13.78-5.813 13.047-7.306-14.342-4.236 12.147-8.726-14.717-2.546 9.735-12.074-15.5.935 4.684-14.81-14.112 6.496-1.024-15.532L101.5 17.121l-4.224-14.99-9.726 12.166L81.37 0l-8.02 13.353L65.333 0l-6.172 14.297-9.718-12.171-4.216 14.991L33.896 6.378 32.863 21.91l-14.108-6.511 4.672 14.813-15.504-.932 9.755 12.07-14.72 2.55 12.134 8.743-14.35 4.215 13.039 7.323L0 69.99l13.78 5.81L.743 83.124l14.35 4.224-12.139 8.742 14.721 2.558-9.755 12.067 15.504-.928-4.672 14.81 14.108-6.508 1.033 15.536 11.332-10.743 4.22 14.991 9.714-12.167L65.334 140l8.016-13.353L81.37 140l6.177-14.297 9.722 12.171 4.228-14.991 11.332 10.747 1.03-15.536 14.107 6.495-4.676-14.805 15.5.931-9.723-12.114"/><path d="M123.552 94.554a89.298 89.298 0 000-49.326 33.057 33.057 0 00-20.207-21.49 91.815 91.815 0 00-59.96 0 32.976 32.976 0 00-20.212 21.49 88.668 88.668 0 000 49.33 32.992 32.992 0 0020.211 21.495 91.597 91.597 0 0029.97 5.035 91.913 91.913 0 0029.987-5.031 33.08 33.08 0 0020.215-21.499" stroke="#FD0" stroke-width="3"/>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="coop-c-editorialcard__inner">
+                                    <figure class="coop-c-editorialcard__media">
+                                        <picture class="coop-c-editorialcard__image">
+                                            <!-- if browser supports webp image format, serve the webp format-->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=786&amp;h=446 2x" type="image/webp">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=968&amp;h=544 2x" type="image/webp">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=1130&amp;h=634 2x" type="image/webp">
+                                            <!-- if no webp supported then default to serve progressive jpeg -->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=786&amp;h=446 2x" type="image/jpeg">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <!-- fallback -->
+                                            <img src="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317" width="565" height="317" alt="">
+                                        </picture>
+                                    </figure>
+                                    <div class="coop-c-editorialcard__content">
+                                        <header class="coop-c-editorialcard__header">
+                                            <h3 class="coop-c-editorialcard__title">
+                                                <span>Explore our range of scary sweets, creepy cupcakes and petrifying pumpkins from £1</span>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </div>
+                            </a>
+                        </article> 
+                    </div>
+                    <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
+                        <article class="coop-c-editorialcard">
+                            <a
+                                href="#"
+                                class="coop-c-editorialcard__link"
+                                data-contenttype=""
+                                data-contentparent=""
+                                data-linktext=""
+                            >
+                                <div class="coop-c-squircle coop-u-flex coop-u-flex-centered coop-c-squircle--fresh_3">       
+                                    <span class=" coop-c-squircle__label">
+                                        <span class="coop-c-squircle__uppercase">Fresh</span>
+                                        <span class="coop-c-squircle__large-text coop-c-squircle--text-pull">3</span>
+                                    </span>
+                                    <span class="coop-c-squircle__media coop-u-flex coop-u-flex-centered" aria-hidden="true">
+                                        <svg class="coop-c-squircle__svg" viewBox="0 0 100 115">
+                                        <g>
+                                            <path
+                                            d="M96.728125,43.0810931 C93.971875,33.6599519 87.090625,26.2431028 77.88125,22.7380123 C59.9125,16.4152936 40.184375,16.4152936 22.03125,22.7702875 C12.909375,26.2431028 6.059375,33.6599519 3.24375,43.1101408 C1.090625,50.6851385 0,58.5409308 0,66.4903213 C0,74.4397117 1.090625,82.295504 3.24375,89.8995495 C6.0625,99.3206907 12.909375,106.73754 22.090625,110.24263 C31.090625,113.402376 40.484375,115 50,115 C59.546875,115 68.940625,113.402376 77.96875,110.210355 C87.121875,106.705265 93.96875,99.3174631 96.725,89.8672742 C98.909375,82.2341811 100,74.3783888 100,66.4903213 C100,58.6022538 98.909375,50.7174138 96.728125,43.0810931 Z"
+                                            id="sq" fill-rule="nonzero"></path>
+                                            <path
+                                            d="M44,0 L50.6425124,0 L51.3188081,5.4309082 C54.5488399,3.59736314 58.0393144,2.68059061 61.7902314,2.68059061 C67.416607,2.68059061 67.4925974,5.01475016 69.8579135,5.01475016 C71.4347908,5.01475016 73.1488197,4.7828573 75,4.31907156 C71.0684597,8.28295675 68.1046199,11.2426224 66.1084806,13.1980684 C63.1142717,16.1312375 59.9780309,15.9122434 57.7791214,15.9122434 C56.3131817,15.9122434 54.5821423,15.3669442 52.586003,14.2763459 L52.586003,19.357326 L44.9134605,20 L44,0 Z"
+                                            id="Path"></path>
+                                        </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="coop-c-editorialcard__inner">
+                                    <figure class="coop-c-editorialcard__media">
+                                        <picture class="coop-c-editorialcard__image">
+                                            <!-- if browser supports webp image format, serve the webp format-->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=786&amp;h=446 2x" type="image/webp">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=968&amp;h=544 2x" type="image/webp">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=1130&amp;h=634 2x" type="image/webp">
+                                            <!-- if no webp supported then default to serve progressive jpeg -->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=786&amp;h=446 2x" type="image/jpeg">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <!-- fallback -->
+                                            <img src="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317" width="565" height="317" alt="">
+                                        </picture>
+                                    </figure> 
+                                    <div class="coop-c-editorialcard__content">
+                                        <header class="coop-c-editorialcard__header">
+                                            <h3 class="coop-c-editorialcard__title">
+                                                <span>Explore our range of scary sweets, creepy cupcakes and petrifying pumpkins from £1</span>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </div>
+                            </a>
+                        </article> 
+                    </div>
+                    <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
+                        <article class="coop-c-editorialcard">
+                            <a
+                                href="#"
+                                class="coop-c-editorialcard__link"
+                                data-contenttype=""
+                                data-contentparent=""
+                                data-linktext=""
+                            >
+                                <div class="coop-c-squircle coop-u-flex coop-u-flex-centered">       
+                                    <span class=" coop-c-squircle__label">
+                                        <span class="coop-c-squircle__large-text">1/2</span>
+                                        <span class="coop-c-squircle__small-text">price</span>
+                                    </span>
+                                    <span class="coop-c-squircle__media coop-u-flex coop-u-flex-centered" aria-hidden="true">
+                                        <svg class="coop-c-squircle__svg" viewBox="0 0 61 58">
+                                        <path d="M59,15C57.3,9.4,53.1,4.9,47.5,2.8c-11-3.8-23-3.8-34.1,0C7.9,4.9,3.7,9.4,2,15c-1.3,4.5-2,9.2-2,14s0.7,9.4,2,14
+                                                c1.7,5.6,5.9,10.1,11.5,12.2C19,57,24.7,58,30.5,58c5.8,0,11.6-1,17.1-2.9C53.1,53,57.3,48.6,59,43c1.3-4.6,2-9.3,2-14
+                                                S60.3,19.6,59,15L59,15z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="coop-c-editorialcard__inner">
+                                    <figure class="coop-c-editorialcard__media">
+                                        <picture class="coop-c-editorialcard__image">
+                                            <!-- if browser supports webp image format, serve the webp format-->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=786&amp;h=446 2x" type="image/webp">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=968&amp;h=544 2x" type="image/webp">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=1130&amp;h=634 2x" type="image/webp">
+                                            <!-- if no webp supported then default to serve progressive jpeg -->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=786&amp;h=446 2x" type="image/jpeg">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <!-- fallback -->
+                                            <img src="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317" width="565" height="317" alt="">
+                                        </picture>
+                                    </figure> 
+                                    <div class="coop-c-editorialcard__content">
+                                        <header class="coop-c-editorialcard__header">
+                                            <h3 class="coop-c-editorialcard__title">
+                                                <span>Explore our range of scary sweets, creepy cupcakes and petrifying pumpkins from £1</span>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </div>
+                            </a>
+                        </article> 
+                    </div>
+                    <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
+                        <article class="coop-c-editorialcard">
+                            <a
+                                href="#"
+                                class="coop-c-editorialcard__link"
+                                data-contenttype=""
+                                data-contentparent=""
+                                data-linktext=""
+                            >
+                                <div class="coop-c-squircle coop-u-flex coop-u-flex-centered">     
+                                    <span class=" coop-c-squircle__label">
+                                        <span class="coop-c-squircle__small-text">3 for</span>
+                                        <span class="coop-c-squircle__large-text coop-c-squircle--text-pull">£2</span>
+                                    </span>
+                                    <span class="coop-c-squircle__media coop-u-flex coop-u-flex-centered" aria-hidden="true">
+                                        <svg class="coop-c-squircle__svg" viewBox="0 0 61 58">
+                                        <path d="M59,15C57.3,9.4,53.1,4.9,47.5,2.8c-11-3.8-23-3.8-34.1,0C7.9,4.9,3.7,9.4,2,15c-1.3,4.5-2,9.2-2,14s0.7,9.4,2,14
+                                                c1.7,5.6,5.9,10.1,11.5,12.2C19,57,24.7,58,30.5,58c5.8,0,11.6-1,17.1-2.9C53.1,53,57.3,48.6,59,43c1.3-4.6,2-9.3,2-14
+                                                S60.3,19.6,59,15L59,15z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="coop-c-editorialcard__inner">
+                                    <figure class="coop-c-editorialcard__media">
+                                        <picture class="coop-c-editorialcard__image">
+                                            <!-- if browser supports webp image format, serve the webp format-->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=786&amp;h=446 2x" type="image/webp">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=968&amp;h=544 2x" type="image/webp">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=1130&amp;h=634 2x" type="image/webp">
+                                            <!-- if no webp supported then default to serve progressive jpeg -->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=786&amp;h=446 2x" type="image/jpeg">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <!-- fallback -->
+                                            <img src="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317" width="565" height="317" alt="">
+                                        </picture>
+                                    </figure> 
+                                    <div class="coop-c-editorialcard__content">
+                                        <header class="coop-c-editorialcard__header">
+                                            <h3 class="coop-c-editorialcard__title">
+                                                <span>Explore our range of scary sweets, creepy cupcakes and petrifying pumpkins from £1</span>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </div>
+                            </a>
+                        </article> 
+                    </div>
+                    <div class="coop-l-column coop-l-large-4 coop-l-medium-6 coop-l-small-12">
+                        <article class="coop-c-editorialcard">
+                            <a
+                                href="#"
+                                class="coop-c-editorialcard__link"
+                                data-contenttype=""
+                                data-contentparent=""
+                                data-linktext=""
+                            >
+                                <div class="coop-c-squircle coop-u-flex coop-u-flex-centered">     
+                                    <span class="coop-c-squircle__label">
+                                        <span class="coop-c-squircle__large-text">£1</span>
+                                    </span>
+                                    <span class="coop-c-squircle__media coop-u-flex coop-u-flex-centered" aria-hidden="true">
+                                        <svg class="coop-c-squircle__svg" viewBox="0 0 61 58">
+                                        <path d="M59,15C57.3,9.4,53.1,4.9,47.5,2.8c-11-3.8-23-3.8-34.1,0C7.9,4.9,3.7,9.4,2,15c-1.3,4.5-2,9.2-2,14s0.7,9.4,2,14
+                                                c1.7,5.6,5.9,10.1,11.5,12.2C19,57,24.7,58,30.5,58c5.8,0,11.6-1,17.1-2.9C53.1,53,57.3,48.6,59,43c1.3-4.6,2-9.3,2-14
+                                                S60.3,19.6,59,15L59,15z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="coop-c-editorialcard__inner">
+                                    <figure class="coop-c-editorialcard__media">
+                                        <picture class="coop-c-editorialcard__image">
+                                            <!-- if browser supports webp image format, serve the webp format-->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=786&amp;h=446 2x" type="image/webp">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=968&amp;h=544 2x" type="image/webp">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=webp&amp;q=60&amp;w=1130&amp;h=634 2x" type="image/webp">
+                                            <!-- if no webp supported then default to serve progressive jpeg -->
+                                            <source media="(min-width: 64em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=393&amp;h=223 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=786&amp;h=446 2x" type="image/jpeg">
+                                            <source media="(min-width: 48em)" srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=484&amp;h=272 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <source srcset="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317 1x,
+                                                        //images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=968&amp;h=544 2x" type="image/jpeg">
+                                            <!-- fallback -->
+                                            <img src="//images.ctfassets.net/bffxiku554r1/4PEnVXbc1IsVbRramtgYL5/abaf2095c38b5c385bc0e352b4d2b20a/Hero-Card1_HalloweenRecipe_1008x567.jpg?fm=jpg&amp;fl=progressive&amp;q=60&amp;w=565&amp;h=317" width="565" height="317" alt="">
+                                        </picture>
+                                    </figure> 
+                                    <div class="coop-c-editorialcard__content">
+                                        <header class="coop-c-editorialcard__header">
+                                            <h3 class="coop-c-editorialcard__title">
+                                                <span>Explore our range of scary sweets, creepy cupcakes and petrifying pumpkins from £1</span>
+                                            </h3>
+                                        </header>
+                                    </div>
+                                </div>
+                            </a>
+                        </article> 
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="coop-u-margin-b-64">
+                <h3>Tags</h3>
+                <div class="coop-l-row">
+                    <div class="coop-l-column coop-l-large-12 coop-l-medium-12 coop-l-small-12">
+
+                        <ul class="coop-c-list-tags">
+                            <li class="coop-c-tag coop-c-tag--gluten-free">
+                                <a href="#" class="coop-c-tag__link">Gluten Free</a>
+                            </li>
+                            <li class="coop-c-tag coop-c-tag--vegan">
+                                <a href="#" class="coop-c-tag__link">Vegan</a>
+                            </li>
+                            <li class="coop-c-tag coop-c-tag--vegetarian">
+                                <a href="#" class="coop-c-tag__link">Vegetarian</a>
+                            </li>
+                            <li class="coop-c-tag coop-c-tag--co-op-irresistible">
+                                <a href="#" class="coop-c-tag__link">Irresistible</a>
+                            </li>
+                            <li class="coop-c-tag">
+                                <a href="#" class="coop-c-tag__link">Nut Free</a>
+                            </li>
+                            <li class="coop-c-tag ">
+                                <a href="#" class="coop-c-tag__link" >Ros&eacute;</a>
+                            </li>
+                            <li class="coop-c-tag ">
+                                <a href="#" class="coop-c-tag__link" >Fairtrade</a>
+                            </li>
+                            <li class="coop-c-tag ">
+                                <a href="#" class="coop-c-tag__link" >Award winning</a>
+                            </li>
+                        </ul>
+
+                        <ul class="coop-u-list-bare coop-c-list-tags">
+                            <li class="coop-c-list-tags__icon  coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/argentina.svg" alt="" height="28" width="28">
+                                <span>Argentina</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/australia.svg" alt="" height="28" width="28">
+                                <span>Australia</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon  coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/austria.svg" alt="" height="28" width="28">
+                                <span>Austria</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon  coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/bulgaria.svg" alt="" height="28" width="28">
+                                <span>Bulgaria</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon  coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/chile.svg" alt="" height="28" width="28">
+                                <span>Chile</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/england.svg" alt="" height="28" width="28">
+                                <span>England</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/france.svg" alt="" height="28" width="28">
+                                <span>France</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/germany.svg" alt="" height="28" width="28">
+                                <span>Germany</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/hungary.svg" alt="" height="28" width="28">
+                                <span>Hungary</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/ireland.svg" alt="" height="28" width="28">
+                                <span>Ireland</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/italy.svg" alt="" height="28" width="28">
+                                <span>Italy</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/lebanon.svg" alt="" height="28" width="28">
+                                <span>Lebanon</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/new-zealand.svg" alt="" height="28" width="28">
+                                <span>New Zealand</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/portugal.svg" alt="" height="28" width="28">
+                                <span>Portugal</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/russia.svg" alt="" height="28" width="28">
+                                <span>Russia</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/scotland.svg" alt="" height="28" width="28">
+                                <span>Scotland</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/south-africa.svg" alt="" height="28" width="28">
+                                <span>South Africa</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/sweden.svg" alt="" height="28" width="28">
+                                <span>Sweden</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/uk.svg" alt="" height="28" width="28">
+                                <span>UK</span>
+                            </li>
+                            <li class="coop-c-list-tags__icon coop-c-icon">
+                                <img class="coop-c-list-tags__icon__left" src="https://www.coop.co.uk/products/assets/static/images/wine/countrys/usa.svg" alt="" height="28" width="28">
+                                <span>USA</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="coop-u-margin-b-64">
+                <h3>Membership</h3>
+                <div class="coop-l-row">
+                    <div class="coop-l-column coop-l-large-12 coop-l-medium-12 coop-l-small-12">
+
+                        <aside class="coop-c-membershipmodule coop-c-membershipmodule--full">
+                            <header class="coop-c-membershipmodule__header">
+                                <h3 class="coop-c-membershipmodule__title">
+                                Become a Co-op Member
+                                </h3>
+                             </header>
+                            <p class="coop-c-membershipmodule__lead">
+                                Join Co-op, earn rewards and help your community
+                            </p>
+                            <div class="coop-c-membershipmodule__body">
+                                <p class="coop-c-membershipmodule__cta">
+                                    <a href="https://membership.coop.co.uk/register"
+                                        class="coop-btn coop-btn--medium coop-btn--primary coop-c-membershipmodule__cta__link"
+                                        data-contenttype="Membership module" data-contentparent="Become a member" data-linktext="Become a Co-op Member">
+                                        Become a Co-op Member
+                                    </a>
+                                </p>
+                                <p class="coop-c-membershipmodule__sign-in">
+                                    <a href="https://membership.coop.co.uk/sign-in"
+                                        class="coop-c-membershipmodule__sign-in__link" data-contenttype="Membership module"
+                                        data-contentparent="Become a member" data-linktext="Sign into your Membership account">
+                                        Sign into your Membership account
+                                    </a>
+                                </p>
+                            </div>
+                            <figure class="coop-c-membershipmodule__media">
+                                <img src="https://www.coop.co.uk/assets/static/images/logo/membership-module-logo-lg.png" alt="Image of a Co-op membership card">
+                            </figure>
+                            <!-- <ul class="coop-c-membershipmodule__links">
+                                <li class="coop-c-membershipmodule__links__item">
+                                    <a href="">link</a>
+                                </li>
+                            </ul> -->
+                        </aside>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="coop-u-margin-b-64">
+                <h3>Offers</h3>
+                <div class="coop-l-row">
+                    <div class="coop-l-column coop-l-large-12 coop-l-medium-12 coop-l-small-12">
+
+                        <div class="coop-offers-module-container">
+                            <div class="coop-c-offersmodule">
+                              <div class="coop-l-grid">
+                                <div class="coop-l-grid-item col-md-7 col-lg-6">
+                                  <header class="coop-c-offersmodule__header">
+                                    <h3 class="coop-c-offersmodule__title">
+                                      Save with offers personalised to you
+                                    </h3>
+                                  </header>
+                                  <ul class="coop-c-offersmodule__links">
+                                    <li class="coop-c-offersmodule__links__item">Get money off products you like to buy or might want to try</li>
+                                    <li class="coop-c-offersmodule__links__item">Every week you can choose 2 offers to use in Co-op Food stores
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="coop-l-grid-item col-md-5 col-lg-5 coop-c-offersmodule__actions">
+                                  <p class="coop-c-offersmodule__cta">
+                                    <a href="https://coop.co.uk/offers" class="coop-c-offersmodule__cta__link" data-contenttype="Offers module"
+                                      data-contentparent="Save with offers personalised to you" data-linktext="Find out more about offers">
+                                      Find out more about offers
+                                    </a>
+                                  </p>
+                                  <p class="coop-c-offersmodule__sign-in">
+                                    <a href="https://membership.coop.co.uk/register" class="coop-c-offersmodule__sign-in__link"
+                                      data-contenttype="Offers module" data-contentparent="Sign in to see your offers"
+                                      data-linktext="Become a Co-op member to get your offers">
+                                      Become a Co-op Member to get your offers
+                                    </a>
+                                  </p>
+                                </div>
+                                <div class="coop-l-grid-item col-lg-1 coop-c-offersmodule__media-container">
+                                  <figure class="coop-c-offersmodule__media">
+                                    <?xml version="1.0" encoding="UTF-8"?>
+                                    <svg width="49px" height="78px" viewBox="0 0 49 78" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Offers" transform="translate(-1318.000000, -158.000000)">
+                                          <g id="Offers_generic" transform="translate(153.000000, 108.000000)">
+                                            <g id="Group-5">
+                                              <g id="Group-4">
+                                                <g id="Membership_Card_Front_Avenir_Outlined_PMS306-(2)-01-Copy-3"
+                                                  transform="translate(1165.000000, 50.000000)">
+                                                  <image id="Membership_Card_Front_Avenir_Outlined_PMS306-(2)-01" x="0" y="0" width="49" height="78"
+                                                    xlink:href="data:image/png;base64,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">
+                                                  </image>
+                                                </g>
+                                              </g>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </svg>
+                                  </figure>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="coop-double-squircles-bg">
+                              <svg width="281px" height="219px" viewBox="0 0 281 219" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Components-(updated-visual-style)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                  <g id="Offers-1" transform="translate(-144.000000, -532.000000)" fill="#F0D2CE" fill-rule="nonzero">
+                                    <g id="Group" transform="translate(144.000000, 532.000000)">
+                                      <g id="Group-2" transform="translate(0.877180, 0.500000)">
+                                        <path
+                                          d="M114.008114,218 C136.345623,218 157.636441,214.195055 177.612811,207.301107 C199.147046,199.192472 214.482278,181.792694 220.640712,161.43262 C225.4279,144.789004 228,127.180074 228,108.975867 C228,90.8279705 225.4279,73.2270849 220.640712,56.5754244 C214.482278,36.2073063 199.147046,18.8075277 177.612811,10.7149815 C157.636441,3.80494465 136.345623,0 114.008114,0 C91.7111744,0 70.3716726,3.80494465 50.4520996,10.7149815 C28.901637,18.8075277 13.5258363,36.2073063 7.42419929,56.5754244 C2.6288968,73.2270849 0,90.8279705 0,108.975867 C0,127.180074 2.6288968,144.789004 7.42419929,161.43262 C13.5258363,181.792694 28.901637,199.192472 50.4520996,207.301107 C70.3716726,214.195055 91.7111744,218 114.008114,218 Z"
+                                          id="shape-copy-10" style="mix-blend-mode: multiply;"></path>
+                                      </g>
+                                      <g id="Group-2-Copy" transform="translate(113.877180, 4.500000)">
+                                        <path
+                                          d="M83.3667676,159 C99.6449612,159 115.160392,156.224834 129.717933,151.196679 C145.410751,145.282583 156.586118,132.591919 161.074003,117.74214 C164.56261,105.602989 166.436997,92.7597786 166.436997,79.4823985 C166.436997,66.2460886 164.56261,53.4087454 161.074003,41.2637269 C156.586118,26.4080812 145.410751,13.717417 129.717933,7.81505535 C115.160392,2.77516605 99.6449612,0 83.3667676,0 C67.1181386,0 51.5672308,2.77516605 37.0510793,7.81505535 C21.3464363,13.717417 10.1415047,26.4080812 5.69500941,41.2637269 C2.20048984,53.4087454 0.284712608,66.2460886 0.284712608,79.4823985 C0.284712608,92.7597786 2.20048984,105.602989 5.69500941,117.74214 C10.1415047,132.591919 21.3464363,145.282583 37.0510793,151.196679 C51.5672308,156.224834 67.1181386,159 83.3667676,159 Z"
+                                          id="shape-copy-10a" style="mix-blend-mode: multiply;"></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
 
 
     </div>

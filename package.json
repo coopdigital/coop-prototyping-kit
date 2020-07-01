@@ -5,13 +5,20 @@
     "node": "8.6.0"
   },
   "dependencies": {
-    "@coopdigital/component-card": "^2.0.1",
-    "@coopdigital/component-card--product": "^1.1.0",
-    "@coopdigital/component-search": "^1.0.7",
-    "@coopdigital/component-signpost": "^2.0.2",
-    "@coopdigital/component-skipnav": "^1.0.5",
-    "@coopdigital/component-tags": "^2.0.2",
-    "@coopdigital/css-foundations": "^2.0.5",
+    "@coopdigital/shared-component--editorialcard": "^0.0.8",
+    "@coopdigital/shared-component--featurecard": "^0.1.0",
+    "@coopdigital/shared-component--hero": "^0.0.8",
+    "@coopdigital/shared-component--membership": "^0.1.0",
+    "@coopdigital/shared-component--offers": "^0.1.1",
+    "@coopdigital/shared-component--signpost": "^0.0.10",
+    "@coopdigital/component-card--product": "^1.2.0",
+    "@coopdigital/component-search": "^1.0.13",
+    "@coopdigital/component-skipnav": "^1.0.11",
+    "@coopdigital/component-tags": "^2.0.8",
+    "@coopdigital/component-squircles": "^1.0.8",
+    "@coopdigital/component-notification": "^1.0.2",
+    "@coopdigital/component-notification--alert": "^1.0.2",
+    "@coopdigital/css-foundations": "^2.1.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-concat": "^2.6.0",
@@ -43,6 +50,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "postinstall": "gulp build"
+    "postinstall": "gulp build",
+    "build": "gulp build",
+    "server": "gulp server"
   }
 }

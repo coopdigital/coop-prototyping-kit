@@ -2,11 +2,21 @@
 @import "css-foundations/dist/foundations.css";
 
 /* Components */
-@import "component-search/dist/component.css";
-@import "component-card/dist/card.css";
-@import "component-card--product/dist/card--product.css";
 @import "component-skipnav/dist/skipnav.css";
-@import "component-signpost/dist/signpost.css"; 
+@import "component-card--product/dist/card--product.css";
+@import "component-notification/dist/notification.css";
+@import "component-notification--alert/dist/notification--alert.css";
+@import "component-search/dist/component.css";
+@import "component-squircles/dist/squircles.css";
+@import "component-tags/dist/tags.css";
+@import "shared-component--signpost/dist/signpost.css";
+@import "shared-component--editorialcard/dist/editorialCard.css";
+@import "shared-component--featurecard/dist/featureCard.css";
+@import "shared-component--hero/dist/hero.css";
+@import "shared-component--membership/dist/membership.css";
+@import "shared-component--offers/dist/offers.css";
+
+
 
 .coop-logo path {
     fill: #00b1e7;
@@ -16,4 +26,10 @@
 .ds-demo-block {
     border: 1px solid var(--color-grey-dark);
     background: var(--color-grey-mid);
+}
+
+@media (min-width: 81.25em) {
+    .coop-c-hero__inner {
+        padding: 3rem 2rem 0;
+    }
 }
