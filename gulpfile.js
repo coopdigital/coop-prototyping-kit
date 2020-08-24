@@ -1,7 +1,6 @@
 'use strict';
 
 const gulp = require('gulp');
-const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const connect = require('gulp-connect');
 const concat = require('gulp-concat');
@@ -10,12 +9,7 @@ const jshint = require('gulp-jshint');
 const stylish = require('jshint-stylish');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
-const cssimport = require('gulp-cssimport');
 const postcss = require('gulp-postcss');
-const postcssCustomMedia = require('postcss-custom-media');
-const postcssCustomProperties = require('postcss-custom-properties');
-const postcssNesting = require('postcss-nesting');
-const postcssCalc = require('postcss-calc');
 const spawn = require('child_process').spawn;
 
 /**
@@ -43,14 +37,6 @@ const dest_paths = {
 const settings = {
   css: {
     outputStyle: 'compressed',
-    includePaths: [
-      'node_modules',
-      '../node_modules',
-      src + 'src/css/main.css',
-      __dirname + '/node_modules',
-      '../node_modules/@coopdigital',
-      __dirname + '/node_modules/@coopdigital'
-    ],
   },
   include: {
     includePaths: [
@@ -58,16 +44,6 @@ const settings = {
       __dirname + '/src/_js',
     ]
   }
-};
-
-const importOptions = {
-    matchPattern: "*.{pcss,css}",
-    includePaths: [
-      '../node_modules',
-      __dirname + '/node_modules',
-      '../node_modules/@coopdigital',
-      __dirname + '/node_modules/@coopdigital'
-    ]
 };
 
 
@@ -104,31 +80,21 @@ function html() {
 
 // Styles
 function css() {
-  return gulp
-    .src(src_paths.css)
-    .pipe(cssimport(importOptions))
-    .pipe(
-      postcss(
-        [
-          postcssCustomMedia(), 
-          postcssCustomProperties(),
-          postcssNesting(),
-          postcssCalc()
-        ]
-      )
-    )
-    .pipe(autoprefixer())
+  return gulp.src(src_paths.css, { follow: true })
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(postcss())
+    .pipe(sourcemaps.write('maps/'))
     .pipe(gulp.dest(dest_paths.styles))
     .pipe(connect.reload());
 }
 
 // Scripts
 function js() {
-  return gulp.src(src_paths.scripts)
-    .pipe(sourcemaps.init())
-      .pipe(include(settings.include))
-      .pipe(concat('main.js'))
-      .pipe(uglify())
+  return gulp.src(src_paths.scripts, { follow: true })
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(include(settings.include))
+    .pipe(concat('main.js'))
+    .pipe(uglify())
     .pipe(sourcemaps.write('maps/'))
     .pipe(gulp.dest(dest_paths.scripts))
     .pipe(connect.reload());
