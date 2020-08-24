@@ -12,7 +12,7 @@ This project uses [Jekyll](http://jekyllrb.com/) to generate pages, and various 
 
 ```sh
 bundle install
-npm install
+npm ci
 ```
 
 Once dependencies have been installed, you can build and serve your prototype locally. Gulp commands are already set up to generate the Jekyll build, lint and compile the SASS and JavaScript, to copy over necessary assets from the Toolkit, and to run a local server for development.
@@ -20,7 +20,7 @@ Once dependencies have been installed, you can build and serve your prototype lo
 The default gulp task will build and compile all the assets, start a local server, and watch for file changes:
 
 ```sh
-gulp
+npx gulp
 ```
 
 A local version of the prototype will now be accessible at <http://localhost:9000>.
