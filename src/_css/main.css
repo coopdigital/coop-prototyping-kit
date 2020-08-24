@@ -17,7 +17,6 @@
 @import "@coopdigital/shared-component--offers";
 
 .coop-logo path {
-    fill: #00b1e7;
     fill: var(--color-brand);
 }
 
