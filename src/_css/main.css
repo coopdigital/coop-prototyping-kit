@@ -1,22 +1,20 @@
 
-@import "css-foundations/dist/foundations.css";
+@import "@coopdigital/css-foundations";
 
 /* Components */
-@import "component-skipnav/dist/skipnav.css";
-@import "component-card--product/dist/card--product.css";
-@import "component-notification/dist/notification.css";
-@import "component-notification--alert/dist/notification--alert.css";
-@import "component-search/dist/component.css";
-@import "component-squircles/dist/squircles.css";
-@import "component-tags/dist/tags.css";
-@import "shared-component--signpost/dist/signpost.css";
-@import "shared-component--editorialcard/dist/editorialCard.css";
-@import "shared-component--featurecard/dist/featureCard.css";
-@import "shared-component--hero/dist/hero.css";
-@import "shared-component--membership/dist/membership.css";
-@import "shared-component--offers/dist/offers.css";
-
-
+@import "@coopdigital/component-skipnav";
+@import "@coopdigital/component-card--product";
+@import "@coopdigital/component-notification";
+@import "@coopdigital/component-notification--alert";
+@import "@coopdigital/component-search";
+@import "@coopdigital/component-squircles";
+@import "@coopdigital/component-tags";
+@import "@coopdigital/shared-component--signpost";
+@import "@coopdigital/shared-component--editorialcard";
+@import "@coopdigital/shared-component--featurecard";
+@import "@coopdigital/shared-component--hero";
+@import "@coopdigital/shared-component--membership";
+@import "@coopdigital/shared-component--offers";
 
 .coop-logo path {
     fill: #00b1e7;
