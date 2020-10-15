@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorator (0.1)
-    ffi (1.9.10)
+    ffi (1.13)
     jekyll (3.1.2)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
@@ -44,7 +44,7 @@ DEPENDENCIES
   scss_lint
 
 RUBY VERSION
-   ruby 2.5.5p157
+   ruby 2.6.3
 
 BUNDLED WITH
    1.17.3
