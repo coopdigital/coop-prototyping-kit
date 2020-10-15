@@ -17,10 +17,10 @@ npm ci
 
 Once dependencies have been installed, you can build and serve your prototype locally. Gulp commands are already set up to generate the Jekyll build, lint and compile the SASS and JavaScript, to copy over necessary assets from the Toolkit, and to run a local server for development.
 
-The server gulp task will build and compile all the assets, start a local server, and watch for file changes:
+The default gulp task will build and compile all the assets, start a local server, and watch for file changes:
 
 ```sh
-npx gulp server
+npx gulp
 ```
 
 A local version of the prototype will now be accessible at <http://localhost:9000>.
