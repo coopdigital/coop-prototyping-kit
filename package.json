@@ -2,7 +2,7 @@
   "name": "coop-prototyping-toolkit",
   "private": true,
   "engines": {
-    "node": "8.6.0"
+    "node": "12.x"
   },
   "dependencies": {
     "@coopdigital/component-card": "^3.2.2",
