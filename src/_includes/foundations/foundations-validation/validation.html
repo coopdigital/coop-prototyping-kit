@@ -1,0 +1,22 @@
+
+<form class="coop-form">
+    <div class="coop-c-message coop-c-message--error" aria-labelledby="error-message-heading" tabindex="-1" role="alert">
+        <h2 id="error-message-heading" class="coop-c-message__heading">There’s a problem</h2>
+        <p class="coop-c-message__message">Check the form. You must:</p>
+        <ul class="coop-c-message__list">
+            <li><a class="coop-c-message__link coop-t-link" href="#client-name">enter your full name</a></li>
+            <li><a class="coop-c-message__link coop-t-link" href="#client-email-address">enter an email address</a></li>
+        </ul>
+    </div>
+    <div class="coop-form__row">
+        <label class="coop-form__label" for="client-name">Your full name</label>
+        <p id="client-name-error" class="coop-form__error">Enter your full name</p>
+        <input class="coop-form__field coop-form__input coop-form__invalid" type="text" value="" name="client[name]" id="client-name" aria-describedby="client-name-error">
+    </div>
+    <div class="coop-form__row">
+        <label class="coop-form__label" for="client-email-address">Your email address</label>
+        <p id="client-email-address-hint" class="coop-form__hint">We’ll only use this to contact you about your will.</p>
+        <p id="client-email-address-error" class="coop-form__error">Enter an email address</p>
+        <input class="coop-form__field coop-form__input coop-form__invalid" type="email" value="" name="client[email_address]" id="client-email-address" aria-describedby="client-email-address-hint client-email-address-error">
+    </div>
+</form>

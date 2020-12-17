@@ -1,0 +1,60 @@
+
+<!-- Select -->
+<form class="coop-form">
+    <h3>Select</h3>
+
+    <div class="coop-form__row">
+        <label class="coop-form__label" for="sort-by-1">Sort by:</label>
+        <select id="sort-by-1" class="coop-form__field coop-form__select">
+            <option value="relevancy">Relevancy</option>
+            <option value="price-asc">Price: Low to high</option>
+            <option value="price-desc">Price: High to low</option>
+        </select>
+    </div>
+</form>
+
+<!-- Select with hint -->
+<form class="coop-form">
+    <h3>Select with hint</h3>
+
+    <div class="coop-form__row">
+        <label class="coop-form__label" for="sort-by-2">Sort by:</label>
+        <p id="sort-by-2-hint" class="coop-form__hint">This is an example hint</p>
+        <select id="sort-by-2" class="coop-form__field coop-form__select" aria-describedby="sort-by-2-hint">
+            <option value="relevancy">Relevancy</option>
+            <option value="price-asc">Price: Low to high</option>
+            <option value="price-desc">Price: High to low</option>
+        </select>
+    </div>
+</form>
+
+<!-- Select with error message -->
+<form class="coop-form">
+    <h3>Select with error message</h3>
+
+    <div class="coop-form__row">
+        <label class="coop-form__label" for="sort-by-3">Sort by:</label>
+        <p id="sort-by-3-error" class="coop-form__error">Select a sort by option</p>
+        <select id="sort-by-3" class="coop-form__field coop-form__select coop-form__invalid" aria-describedby="sort-by-3-error">
+            <option value="relevancy">Relevancy</option>
+            <option value="price-asc">Price: Low to high</option>
+            <option value="price-desc">Price: High to low</option>
+        </select>
+    </div>
+</form>
+
+<!-- Select with hint and error message -->
+<form class="coop-form">
+    <h3>Select with hint and error message</h3>
+
+    <div class="coop-form__row">
+        <label class="coop-form__label" for="sort-by-4">Sort by:</label>
+        <p id="sort-by-4-hint" class="coop-form__hint">This is an example hint</p>
+        <p id="sort-by-4-error" class="coop-form__error">Select a sort by option</p>
+        <select id="sort-by-4" class="coop-form__field coop-form__select coop-form__invalid" aria-describedby="sort-by-4-hint sort-by-4-error">
+            <option value="relevancy">Relevancy</option>
+            <option value="price-asc">Price: Low to high</option>
+            <option value="price-desc">Price: High to low</option>
+        </select>
+    </div>
+</form>

@@ -1,0 +1,204 @@
+
+<!-- Checkboxes and radios -->
+<form class="coop-form">
+    <h3>Checkboxes and radios</h3>
+
+    <fieldset class="coop-form__row">
+        <legend class="coop-form__label">Do you own:</legend>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-1" id="checkbox-1-1" value="1" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-1-1" class="coop-form__label">a business</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-1" id="checkbox-1-2" value="2" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-1-2" class="coop-form__label">agricultural property</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-1" id="checkbox-1-3" value="3" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-1-3" class="coop-form__label">foreign property</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-1" id="checkbox-1-4" value="4" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-1-4" class="coop-form__label">trademarks or patents</label>
+        </div>
+    </fieldset>
+    <fieldset class="coop-form__row">
+        <legend class="coop-form__label">Type of delivery</legend>
+        <div class="coop-form__choice">
+            <input type="radio" name="radio-1" id="radio-1-1" value="1" class="coop-form__field coop-form__radio">
+            <label class="coop-form__label" for="radio-1-1">Free delivery</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="radio" name="radio-1" id="radio-1-2" value="2" class="coop-form__field coop-form__radio">
+            <label class="coop-form__label" for="radio-1-2">Next day delivery — £4.99</label>
+        </div>
+    </fieldset>
+</form>
+
+<!-- Checkboxes and radios with hint -->
+<form class="coop-form">
+    <h3>Checkboxes and radios with hint</h3>
+
+    <fieldset class="coop-form__row" aria-describedby="checkbox-2-hint">
+        <legend class="coop-form__label">Do you own:</legend>
+        <p id="checkbox-2-hint" class="coop-form__hint">Select all that apply</p>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-2" id="checkbox-2-1" value="1" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-2-1" class="coop-form__label">a business</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-2" id="checkbox-2-2" value="2" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-2-2" class="coop-form__label">agricultural property</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-2" id="checkbox-2-3" value="3" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-2-3" class="coop-form__label">foreign property</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-2" id="checkbox-2-4" value="4" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-2-4" class="coop-form__label">trademarks or patents</label>
+        </div>
+    </fieldset>
+    <fieldset class="coop-form__row" aria-describedby="radio-2-hint">
+        <legend class="coop-form__label">Type of delivery</legend>
+        <p id="radio-2-hint" class="coop-form__hint">Select only one option</p>
+        <div class="coop-form__choice">
+            <input type="radio" name="radio-2" id="radio-2-1" value="1" class="coop-form__field coop-form__radio">
+            <label class="coop-form__label" for="radio-2-1">Free delivery</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="radio" name="radio-2" id="radio-2-2" value="2" class="coop-form__field coop-form__radio">
+            <label class="coop-form__label" for="radio-2-2">Next day delivery — £4.99</label>
+        </div>
+    </fieldset>
+</form>
+
+<!-- Checkboxes and radios with error message -->
+<form class="coop-form">
+    <h3>Checkboxes and radios with error message</h3>
+
+    <fieldset class="coop-form__row" aria-describedby="checkbox-3-error">
+        <legend class="coop-form__label">Do you own:</legend>
+        <p id="checkbox-3-error" class="coop-form__error">Select options owned by you</p>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-3" id="checkbox-3-1" value="1" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-3-1" class="coop-form__label">a business</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-3" id="checkbox-3-2" value="2" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-3-2" class="coop-form__label">agricultural property</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-3" id="checkbox-3-3" value="3" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-3-3" class="coop-form__label">foreign property</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-3" id="checkbox-3-4" value="4" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-3-4" class="coop-form__label">trademarks or patents</label>
+        </div>
+    </fieldset>
+    <fieldset class="coop-form__row" aria-describedby="radio-3-error">
+        <legend class="coop-form__label">Type of delivery</legend>
+        <p id="radio-3-error" class="coop-form__error">Select type of delivery</p>
+        <div class="coop-form__choice">
+            <input type="radio" name="radio-3" id="radio-3-1" value="1" class="coop-form__field coop-form__radio">
+            <label class="coop-form__label" for="radio-3-1">Free delivery</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="radio" name="radio-3" id="radio-3-2" value="2" class="coop-form__field coop-form__radio">
+            <label class="coop-form__label" for="radio-3-2">Next day delivery — £4.99</label>
+        </div>
+    </fieldset>
+</form>
+
+<!-- Checkboxes and radios with hint and error message -->
+<form class="coop-form">
+    <h3>Checkboxes and radios with hint and error message</h3>
+
+    <fieldset class="coop-form__row" aria-describedby="checkbox-4-hint checkbox-4-error">
+        <legend class="coop-form__label">Do you own:</legend>
+        <p id="checkbox-4-hint" class="coop-form__hint">Select all that apply</p>
+        <p id="checkbox-4-error" class="coop-form__error">Select options owned by you</p>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-4" id="checkbox-4-1" value="1" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-4-1" class="coop-form__label">a business</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-4" id="checkbox-4-2" value="2" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-4-2" class="coop-form__label">agricultural property</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-4" id="checkbox-4-3" value="3" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-4-3" class="coop-form__label">foreign property</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-4" id="checkbox-4-4" value="4" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-4-4" class="coop-form__label">trademarks or patents</label>
+        </div>
+    </fieldset>
+    <fieldset class="coop-form__row" aria-describedby="radio-4-hint radio-4-error">
+        <legend class="coop-form__label">Type of delivery</legend>
+        <p id="radio-4-hint" class="coop-form__hint">Select only one option</p>
+        <p id="radio-4-error" class="coop-form__error">Select type of delivery</p>
+        <div class="coop-form__choice">
+            <input type="radio" name="radio-4" id="radio-4-1" value="1" class="coop-form__field coop-form__radio">
+            <label class="coop-form__label" for="radio-4-1">Free delivery</label>
+        </div>
+        <div class="coop-form__choice">
+            <input type="radio" name="radio-4" id="radio-4-2" value="2" class="coop-form__field coop-form__radio">
+            <label class="coop-form__label" for="radio-4-2">Next day delivery — £4.99</label>
+        </div>
+    </fieldset>
+</form>
+
+<!-- Single checkbox -->
+<form class="coop-form">
+    <h3>Single checkbox</h3>
+
+    <div class="coop-form__row">
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-5" id="checkbox-5-1" value="1" class="coop-form__field coop-form__checkbox">
+            <label for="checkbox-5-1" class="coop-form__label">I agree to the terms and conditions</label>
+        </div>
+    </div>
+</form>
+
+<!-- Single checkbox with hint -->
+<form class="coop-form">
+    <h3>Single checkbox with hint</h3>
+
+    <div class="coop-form__row">
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-6" id="checkbox-6-1" value="1" class="coop-form__field coop-form__checkbox" aria-describedby="checkbox-6-hint">
+            <label for="checkbox-6-1" class="coop-form__label">I agree to the terms and conditions</label>
+            <p id="checkbox-6-hint" class="coop-form__hint">Descriptive hint goes here</p>
+        </div>
+      </div>
+</form>
+
+<!-- Single checkbox with error message -->
+<form class="coop-form">
+    <h3>Single checkbox with error message</h3>
+
+    <div class="coop-form__row">
+        <p id="checkbox-7-error" class="coop-form__error">Please accept the terms and conditions</p>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-7" id="checkbox-7-1" value="1" class="coop-form__field coop-form__checkbox" aria-describedby="checkbox-7-error">
+            <label for="checkbox-7-1" class="coop-form__label">I agree to the terms and conditions</label>
+        </div>
+    </div>
+</form>
+
+<!-- Single checkbox with hint and error message -->
+<form class="coop-form">
+    <h3>Single checkbox with hint and error message</h3>
+
+    <div class="coop-form__row">
+        <p id="checkbox-8-error" class="coop-form__error">Please accept the terms and conditions</p>
+        <div class="coop-form__choice">
+            <input type="checkbox" name="checkbox-8" id="checkbox-8-1" value="1" class="coop-form__field coop-form__checkbox" aria-describedby="checkbox-8-hint checkbox-8-error">
+            <label for="checkbox-8-1" class="coop-form__label">I agree to the terms and conditions</label>
+            <p id="checkbox-8-hint" class="coop-form__hint">Descriptive hint goes here</p>
+        </div>
+    </div>
+</form>
