@@ -1,0 +1,44 @@
+
+<!-- Input -->
+<form class="coop-form">
+    <h3>Input</h3>
+
+    <div class="coop-form__row">
+        <label for="full-name-1" class="coop-form__label">Full name</label>
+        <input type="text" name="full-name-1" id="full-name-1" class="coop-form__field coop-form__input">
+    </div>
+</form>
+
+<!-- Input with hint -->
+<form class="coop-form">
+    <h3>Input with hint</h3>
+
+    <div class="coop-form__row">
+        <label for="full-name-2" class="coop-form__label">Full name</label>
+        <p id="full-name-2-hint" class="coop-form__hint">This is an example hint</p>
+        <input type="text" name="full-name-2" id="full-name-2" class="coop-form__field coop-form__input" aria-describedby="full-name-2-hint">
+    </div>
+</form>
+
+<!-- Input with error message -->
+<form class="coop-form">
+    <h3>Input with error message</h3>
+
+    <div class="coop-form__row">
+        <label for="full-name-3" class="coop-form__label">Full name</label>
+        <p id="full-name-3-error" class="coop-form__error">Enter your full name</p>
+        <input type="text" name="full-name-3" id="full-name-3" class="coop-form__field coop-form__input coop-form__invalid" aria-describedby="full-name-3-error">
+    </div>
+</form>
+
+<!-- Input with hint and error message -->
+<form class="coop-form">
+    <h3>Input with hint and error message</h3>
+
+    <div class="coop-form__row">
+        <label for="full-name-4" class="coop-form__label">Full name</label>
+        <p id="full-name-4-hint" class="coop-form__hint">This is an example hint</p>
+        <p id="full-name-4-error" class="coop-form__error">Enter your full name</p>
+        <input type="text" name="full-name-4" id="full-name-4" class="coop-form__field coop-form__input coop-form__invalid" aria-describedby="full-name-4-hint full-name-4-error">
+    </div>
+</form>

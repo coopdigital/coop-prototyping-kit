@@ -1,0 +1,44 @@
+
+<!-- Textarea -->
+<form class="coop-form">
+    <h3>Textarea</h3>
+
+    <div class="coop-form__row">
+        <label for="feedback-1" class="coop-form__label">Tell us what you liked or what we can improve</label>
+        <textarea id="feedback-1" cols="30" rows="4" class="coop-form__field coop-form__textarea"></textarea>
+    </div>
+</form>
+
+<!-- Textarea with hint -->
+<form class="coop-form">
+    <h3>Textarea with hint</h3>
+
+    <div class="coop-form__row">
+        <label for="feedback-2" class="coop-form__label">Tell us what you liked or what we can improve</label>
+        <p id="feedback-2-hint" class="coop-form__hint">This is an example hint</p>
+        <textarea id="feedback-2" cols="30" rows="4" class="coop-form__field coop-form__textarea" aria-describedby="feedback-2-hint"></textarea>
+    </div>
+</form>
+
+<!-- Textarea with error message -->
+<form class="coop-form">
+    <h3>Textarea with error message</h3>
+
+    <div class="coop-form__row">
+        <label for="feedback-3" class="coop-form__label">Tell us what you liked or what we can improve</label>
+        <p id="feedback-3-error" class="coop-form__error">Enter your feedback</p>
+        <textarea id="feedback-3" cols="30" rows="4" class="coop-form__field coop-form__textarea coop-form__invalid" aria-describedby="feedback-3-error"></textarea>
+    </div>
+</form>
+
+<!-- Textarea with hint and error message -->
+<form class="coop-form">
+    <h3>Textarea with hint and error message</h3>
+
+    <div class="coop-form__row">
+        <label for="feedback-4" class="coop-form__label">Tell us what you liked or what we can improve</label>
+        <p id="feedback-4-hint" class="coop-form__hint">This is an example hint</p>
+        <p id="feedback-4-error" class="coop-form__error">Enter your feedback</p>
+        <textarea id="feedback-4" cols="30" rows="4" class="coop-form__field coop-form__textarea coop-form__invalid" aria-describedby="feedback-4-hint feedback-4-error"></textarea>
+    </div>
+</form>
